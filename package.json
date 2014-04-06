@@ -1,6 +1,6 @@
 {
     "name": "AstroPlatform",
-    "version": "0.0.1",
+    "version": "0.1",
     "dependencies": {
         "architect": "0.1.11",
         "async": "0.2.10"
