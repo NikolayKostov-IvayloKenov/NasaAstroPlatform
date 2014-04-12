@@ -1,8 +1,8 @@
 {
-    "name": "Cluster",
+    "name": "Database",
     "version": "0.1",
     "main": "main.js",
     "plugin": {
-        "provides": ["Cluster"]
+        "provides": ["Database"]
     }
 }

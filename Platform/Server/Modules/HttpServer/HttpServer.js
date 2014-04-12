@@ -13,6 +13,7 @@ HttpServer.prototype = {
     init: function() {
         this._app = express();
         this._server = http.createServer(this._app);
+        this._app.use(express.bodyParser({ keepExtensions: true, uploadDir: this._options.uploadDir }));
     },
 
     start: function() {
