@@ -1,7 +1,8 @@
 'use strict';
 
 var express = require('express');
-var http = require('http')
+var http = require('http');
+var WebSocket = require('faye-websocket');
 
 var HttpServer = function(options) {
     this._options = options;
@@ -18,6 +19,13 @@ HttpServer.prototype = {
 
     start: function() {
         var port = this._options.port;
+        this._server.addListener('upgrade', function(request, socket, head) {
+            var ws = new WebSocket(request, socket, head);
+            setInterval(function() {
+                ws.send('pesho');
+            }, 3000);
+            console.log('Notifications started');
+        });
         this._server.listen(port);
     },
 
@@ -37,7 +45,7 @@ HttpServer.prototype = {
     },
 
     respondJSON: function (req, res, obj) {
-        res.header("Access-Control-Allow-Origin", "*");
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader('Content-Type', 'application/json');
         res.send(JSON.stringify(obj));
     },

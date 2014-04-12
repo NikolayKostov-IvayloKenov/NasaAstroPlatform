@@ -30,24 +30,51 @@ UsersController.prototype.handleAllUsersGet = function (req, res, next) {
         name: 'Jeremy Hansen',
         active: false,
         imageUrl: '/img/hansen.jpg',
-        notifications: 0,
-        wearables: []
+        activities: [{
+            type: "image",
+            description: "Test image",
+            content: "http://gallery.artofgregmartin.com/tuts_arts/planet_images/planet_01.jpg",
+            dateCreated: new Date(Date.now())
+        },{
+            type: "text",
+            description: "Test text",
+            content: "This is a test text",
+            dateCreated: new Date(Date.now())
+        }]
     },{
         id: 2,
         username: 'wiseman',
         name: 'Gregory Wiseman',
         active: true,
         imageUrl: '/img/wiseman.jpg',
-        notifications: 0,
-        wearables: []
+        activities: [{
+            type: "image",
+            description: "Test image",
+            content: "http://gallery.artofgregmartin.com/tuts_arts/planet_images/planet_01.jpg",
+            dateCreated: new Date(Date.now())
+        },{
+            type: "text",
+            description: "Test text",
+            content: "This is a test text",
+            dateCreated: new Date(Date.now())
+        }]
     },{
         id: 3,
         username: 'rubins',
         name: 'Kathleen Rubins',
         active: true,
         imageUrl: '/img/rubins.jpg',
-        notifications: 0,
-        wearables: []
+        activities: [{
+            type: "image",
+            description: "Test image",
+            content: "http://gallery.artofgregmartin.com/tuts_arts/planet_images/planet_01.jpg",
+            dateCreated: new Date(Date.now())
+        },{
+            type: "text",
+            description: "Test text",
+            content: "This is a test text",
+            dateCreated: new Date(Date.now())
+        }]
     }];
 
     self._http.respondJSON(req, res, mockResponse);

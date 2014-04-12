@@ -1,10 +1,13 @@
 {
-    "name": "NasaAstroPlatform",
-    "version": "0.0.1",
-    "dependencies": {
-        "architect": "0.1.11",
-        "async": "0.2.10",
-        "express": "3.5.1",
-        "mongoose": "3.8.8"
-    }
+  "name": "NasaAstroPlatform",
+  "version": "0.0.1",
+  "dependencies": {
+    "architect": "0.1.11",
+    "async": "0.2.10",
+    "express": "3.5.1",
+    "mongoose": "3.8.8"
+  },
+  "devDependencies": {
+    "faye-websocket": "^0.7.2"
+  }
 }
