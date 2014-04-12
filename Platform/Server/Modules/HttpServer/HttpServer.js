@@ -1,7 +1,8 @@
 'use strict';
 
 var express = require('express');
-var http = require('http')
+var http = require('http');
+var WebSocketServer = require('ws').Server;
 
 var HttpServer = function (options) {
     this._options = options;
@@ -14,6 +15,22 @@ HttpServer.prototype = {
         this._app = express();
         this._server = http.createServer(this._app);
         this._app.use(express.bodyParser({ keepExtensions: true, uploadDir: this._options.uploadDir }));
+        this._app.use(this._allowCors);
+        var ws = new WebSocketServer({server: this._server});
+    },
+
+    _allowCors: function (req, res, next) {
+        res.header('Access-Control-Allow-Origin', '*');
+        res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+        res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+
+        // intercept OPTIONS method
+        if ('OPTIONS' == req.method) {
+            res.send(200);
+        }
+        else {
+            next();
+        }
     },
 
     start: function () {
