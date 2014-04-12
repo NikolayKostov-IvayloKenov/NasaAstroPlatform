@@ -4,10 +4,9 @@
 public partial class MainWindow
 {
 	private global::Gtk.Notebook notebook1;
-	private global::Gtk.Calendar calendar2;
+	private global::NasaAstroPlatform.Desktop.Client.SendMessageWidget sendmessagewidget2;
 	private global::Gtk.Label label1;
-	private global::Gtk.Table table1;
-	private global::Gtk.FileChooserWidget filechooserwidget1;
+	private global::NasaAstroPlatform.Desktop.Client.SendMessageWidget sendmessagewidget3;
 	private global::Gtk.Label label2;
 
 	protected virtual void Build ()
@@ -15,42 +14,37 @@ public partial class MainWindow
 		global::Stetic.Gui.Initialize (this);
 		// Widget MainWindow
 		this.Name = "MainWindow";
-		this.Title = global::Mono.Unix.Catalog.GetString ("MainWindow");
+		this.Title = global::Mono.Unix.Catalog.GetString ("Astro Platform Client");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		// Container child MainWindow.Gtk.Container+ContainerChild
 		this.notebook1 = new global::Gtk.Notebook ();
 		this.notebook1.CanFocus = true;
 		this.notebook1.Name = "notebook1";
-		this.notebook1.CurrentPage = 1;
+		this.notebook1.CurrentPage = 0;
+		this.notebook1.BorderWidth = ((uint)(6));
 		// Container child notebook1.Gtk.Notebook+NotebookChild
-		this.calendar2 = new global::Gtk.Calendar ();
-		this.calendar2.CanFocus = true;
-		this.calendar2.Name = "calendar2";
-		this.calendar2.DisplayOptions = ((global::Gtk.CalendarDisplayOptions)(35));
-		this.notebook1.Add (this.calendar2);
+		this.sendmessagewidget2 = new global::NasaAstroPlatform.Desktop.Client.SendMessageWidget ();
+		this.sendmessagewidget2.Events = ((global::Gdk.EventMask)(256));
+		this.sendmessagewidget2.Name = "sendmessagewidget2";
+		this.notebook1.Add (this.sendmessagewidget2);
 		// Notebook tab
 		this.label1 = new global::Gtk.Label ();
 		this.label1.Name = "label1";
-		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("page1");
-		this.notebook1.SetTabLabel (this.calendar2, this.label1);
+		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Send message to Earth");
+		this.notebook1.SetTabLabel (this.sendmessagewidget2, this.label1);
 		this.label1.ShowAll ();
 		// Container child notebook1.Gtk.Notebook+NotebookChild
-		this.table1 = new global::Gtk.Table (((uint)(3)), ((uint)(3)), false);
-		this.table1.Name = "table1";
-		this.table1.RowSpacing = ((uint)(6));
-		this.table1.ColumnSpacing = ((uint)(6));
-		// Container child table1.Gtk.Table+TableChild
-		this.filechooserwidget1 = new global::Gtk.FileChooserWidget (((global::Gtk.FileChooserAction)(0)));
-		this.filechooserwidget1.Name = "filechooserwidget1";
-		this.table1.Add (this.filechooserwidget1);
-		this.notebook1.Add (this.table1);
-		global::Gtk.Notebook.NotebookChild w3 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1 [this.table1]));
-		w3.Position = 1;
+		this.sendmessagewidget3 = new global::NasaAstroPlatform.Desktop.Client.SendMessageWidget ();
+		this.sendmessagewidget3.Events = ((global::Gdk.EventMask)(256));
+		this.sendmessagewidget3.Name = "sendmessagewidget3";
+		this.notebook1.Add (this.sendmessagewidget3);
+		global::Gtk.Notebook.NotebookChild w2 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1 [this.sendmessagewidget3]));
+		w2.Position = 1;
 		// Notebook tab
 		this.label2 = new global::Gtk.Label ();
 		this.label2.Name = "label2";
-		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("page2");
-		this.notebook1.SetTabLabel (this.table1, this.label2);
+		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("Send message to NASA");
+		this.notebook1.SetTabLabel (this.sendmessagewidget3, this.label2);
 		this.label2.ShowAll ();
 		this.Add (this.notebook1);
 		if ((this.Child != null)) {

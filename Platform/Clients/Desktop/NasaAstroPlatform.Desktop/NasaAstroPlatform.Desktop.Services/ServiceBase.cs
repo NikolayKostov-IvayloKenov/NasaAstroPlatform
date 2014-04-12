@@ -2,11 +2,10 @@
 
 namespace NasaAstroPlatform.Desktop.Services
 {
-	public class MyClass
+	public abstract class ServiceBase
 	{
-		public MyClass ()
+		public ServiceBase()
 		{
 		}
 	}
 }
-

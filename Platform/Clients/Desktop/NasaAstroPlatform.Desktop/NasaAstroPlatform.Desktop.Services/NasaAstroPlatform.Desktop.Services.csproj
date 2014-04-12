@@ -32,8 +32,11 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceBase.cs" />
+    <Compile Include="IMessageSenderService.cs" />
+    <Compile Include="MessageSenderService.cs" />
+    <Compile Include="NasaMessageSenderService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
