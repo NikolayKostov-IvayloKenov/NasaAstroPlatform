@@ -1,0 +1,133 @@
+.astro-logo {
+  display: block;
+  width: 150px;
+  transition: opacity 400ms ease;
+}
+.astro-logo:hover {
+  opacity: .6;
+}
+
+.ng-scope
+.filter-users {
+  background-color: rbg(10, 10, 10);
+  background-color: rbga(255, 255, 255, 0.1);
+}
+
+.filter-dropdown {
+  overflow: hidden;
+}
+.filter-dropdown li {
+  cursor: pointer;
+}
+.filter-dropdown li:hover {
+  background: #485563;
+}
+.filter-dropdown li input {
+  margin-left: -15px;
+  display: none;
+}
+.filter-dropdown li label {
+  width: 100%;
+  cursor: pointer;
+  margin: 0 0;
+  padding: 5px 10px;
+}
+.filter-dropdown li input[type="radio"]:checked + label {
+  background: #485563;
+  font-weight: bold;
+}
+
+.user-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.user-info-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 5px;
+}
+
+#mod .u-tac {
+  text-align: center;
+}
+#mod .u-tal {
+  text-align: left;
+}
+#mod .u-tar {
+  text-align: right;
+}
+#mod .u-np {
+  padding: 0;
+}
+#mod .u-nm {
+  margin: 0;
+}
+#mod .u-db {
+  display: block;
+}
+#mod .u-dib {
+  display: inline-block;
+}
+#mod .u-di {
+  display: inline;
+}
+#mod .u-vat {
+  vertical-align: top;
+}
+#mod .u-vam {
+  vertical-align: middle;
+}
+#mod .u-vab {
+  vertical-align: bottom;
+}
+#mod .u-pr {
+  position: relative;
+}
+#mod .u-mb1 {
+  margin-bottom: 10px;
+}
+#mod .u-mb2 {
+  margin-bottom: 20px;
+}
+#mod .u-mb3 {
+  margin-bottom: 30px;
+}
+#mod .u-mb4 {
+  margin-bottom: 40px;
+}
+#mod .u-mb5 {
+  margin-bottom: 50px;
+}
+#mod .u-mt1 {
+  margin-top: 10px;
+}
+#mod .u-mt2 {
+  margin-top: 20px;
+}
+#mod .u-mt3 {
+  margin-top: 30px;
+}
+#mod .u-mt4 {
+  margin-top: 40px;
+}
+#mod .u-mt5 {
+  margin-top: 50px;
+}
+#mod .u-pb1 {
+  padding-bottom: 10px;
+}
+#mod .u-pb2 {
+  padding-bottom: 20px;
+}
+#mod .u-pb3 {
+  padding-bottom: 30px;
+}
+#mod .u-pb4 {
+  padding-bottom: 40px;
+}
+#mod .u-pb5 {
+  padding-bottom: 50px;
+}

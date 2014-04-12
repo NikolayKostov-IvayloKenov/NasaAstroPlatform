@@ -1,0 +1,68 @@
+#mod {
+
+  .u-tac {
+    text-align: center;
+  }
+
+  .u-tal {
+    text-align: left;
+  }
+
+  .u-tar {
+    text-align: right;
+  }
+
+  .u-np {
+    padding: 0;
+  }
+
+  .u-nm {
+    margin: 0;
+  }
+
+  .u-db {
+    display: block;
+  }
+
+  .u-dib {
+    display: inline-block;
+  }
+
+  .u-di {
+    display: inline;
+  }
+
+  .u-vat {
+    vertical-align: top;
+  }
+
+  .u-vam {
+    vertical-align: middle;
+  }
+
+  .u-vab {
+    vertical-align: bottom;
+  }
+
+  .u-pr {
+    position: relative;
+  }
+
+  @for $i from 1 through 5 {
+    .u-mb#{$i} {
+      margin-bottom: 10px*$i;
+    }
+  }
+
+  @for $i from 1 through 5 {
+    .u-mt#{$i} {
+      margin-top: 10px*$i;
+    }
+  }
+
+  @for $i from 1 through 5 {
+    .u-pb#{$i} {
+      padding-bottom: 10px*$i;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.ng-scope
+.filter-users {
+  background-color: rbg(10, 10, 10);
+  background-color: rbga(255, 255, 255, 0.1);
+}
+
+.filter-dropdown {
+  overflow: hidden;
+
+  li {
+    cursor: pointer;
+
+    &:hover {
+      background: #485563;
+    }
+
+    input {
+      margin-left: -15px;
+      display: none;
+    }
+
+    label {
+      width: 100%;
+      cursor: pointer;
+      margin: 0 0;
+      padding: 5px 10px
+    }
+
+    input[type="radio"]:checked+label {
+      background: #485563;
+      font-weight: bold;
+    }
+  }
+}
+
+.user-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.user-info-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 5px;
+}
+

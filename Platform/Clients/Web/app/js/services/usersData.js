@@ -6,26 +6,26 @@ astroPlatform.factory('usersData', function($resource) {
 
     var users = [{
         id: 1,
-        username: 'armstrong',
-        name: 'Neil Armstrong',
-        active: true,
-        imageUrl: '/img/profile.png',
+        username: 'hansen',
+        name: 'Jeremy Hansen',
+        active: false,
+        imageUrl: '/img/hansen.jpg',
         notifications: 0,
         wearables: []
     },{
         id: 2,
-        username: 'gagarin',
-        name: 'Yuri Gagarin',
+        username: 'wiseman',
+        name: 'Gregory Wiseman',
         active: true,
-        imageUrl: '/img/profile.png',
+        imageUrl: '/img/wiseman.jpg',
         notifications: 0,
         wearables: []
     },{
         id: 3,
-        username: 'collins',
-        name: 'Michael Collins',
-        active: false,
-        imageUrl: '/img/profile.png',
+        username: 'rubins',
+        name: 'Kathleen Rubins',
+        active: true,
+        imageUrl: '/img/rubins.jpg',
         notifications: 0,
         wearables: []
     }];

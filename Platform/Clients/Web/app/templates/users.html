@@ -1,26 +1,50 @@
 <div class="container clearfix" ng-controller="UsersController">
-    <section>
-        <div>
-            Search: <input type="text" ng-model="search"/>
-        </div>
-        <br />
-        <div>
-            Status:
-            <select ng-model="activity">
-                <option value="" selected="selected">All</option>
-                <option value="true">Online</option>
-                <option value="false">Offline</option>
-            </select>
-        </div>
 
-    </section>
-    <ul>
-        <li ng-repeat="user in users | filter: search | filter: activity">
-            <section>
-                <h3><a href="#/users/{{user.username}}">{{ user.name }}</a></h3>
-                <img ng-src="{{ user.imageUrl }}" src="" />
-                <span>{{ user.active | status }}</span>
-            </section>
-        </li>
-    </ul>
+  <section class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="input-group">
+        <span class="input-group-addon">F</span>
+        <input type="text" class="form-control filter-users" ng-model="search" placeholder="Filter">
+        <span class="input-group-btn">
+         <div class="btn-group ">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Status
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu filter-dropdown">
+            <li>
+              <input id="gr1" type="radio" name="group1" ng-model="activity" value="" checked>
+              <label for="gr1">All</label>
+            </li>
+            <li>
+              <input id="gr2" type="radio" name="group1" ng-model="activity" value="true">
+              <label for="gr2">Online</label>
+            </li>
+            <li>
+              <input id="gr3" type="radio" name="group1" ng-model="activity" value="false">
+              <label for="gr3">Offline</label>
+            </li>
+          </ul>
+
+        </div>
+      </span>
+    </div>
+  </div>
+</section>
+
+<section class="row u-mt2">
+  <ul class="list-unstyled">
+    <li ng-repeat="user in users | filter: search | filter: activity" class="col-md-3">
+      <a href="#/users/{{user.username}}">
+        <article class="u-pr">
+          <img ng-src="{{ user.imageUrl }}" src="" class="user-image" />
+          <div class="user-info-box">
+            <h3>{{ user.name }}</h3>
+            <span>{{ user.active | status }}</span>
+          </div>
+        </article>
+      </a>
+    </li>
+  </ul>
 </div>
+</section>

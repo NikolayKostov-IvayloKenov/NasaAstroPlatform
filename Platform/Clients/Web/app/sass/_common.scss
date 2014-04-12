@@ -1,0 +1,9 @@
+.astro-logo {
+  display: block;
+  width: 150px;
+  transition: opacity 400ms ease;
+
+  &:hover {
+    opacity: .6;
+  }
+}
