@@ -1,0 +1,15 @@
+<div ng-switch on="activity.type">
+    <div class="animate-switch" ng-switch-when="nasa">
+
+    </div>
+    <div class="animate-switch" ng-switch-when="image">
+        <img src="{{ activity.content }}" alt="activity image" />
+        <div>{{ activity.description }}</div>
+        <span>{{ activity.dateCreated }}</span>
+    </div>
+    <div class="animate-switch" ng-switch-default>
+        <div>{{ activity.content }}</div>
+        <div>{{ activity.description }}</div>
+        <span>{{ activity.dateCreated }}</span>
+    </div>
+</div>

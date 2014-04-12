@@ -13,16 +13,16 @@ var astroPlatform = angular
             .when('/login', {
                 templateUrl: 'templates/login.html'
             })
-            .when('/users', {
+            .when('/astronauts', {
                 templateUrl: 'templates/users.html'
             })
-            .when('/users/:username', {
+            .when('/astronauts/:username', {
                 templateUrl: 'templates/users/profile.html'
             })
             .when('/notifications', {
                 templateUrl: 'templates/notifications.html'
             })
-            .otherwise({redirectTo: '/users'});
+            .otherwise({redirectTo: '/astronauts'});
     })
     .constant('author', 'Team Titan')
     .constant('apiUrl', 'http://localhost:8080')

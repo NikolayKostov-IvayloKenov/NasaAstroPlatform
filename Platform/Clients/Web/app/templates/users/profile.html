@@ -8,22 +8,7 @@
     </section>
     <section class="userActivities">
         <article ng-repeat="activity in userData.activities">
-            <div class="animate-switch-container"
-                 ng-switch on="activity.type">
-                <div class="animate-switch" ng-switch-when="nasa">
-
-                </div>
-                <div class="animate-switch" ng-switch-when="image">
-                    <img src="{{ activity.content }}" alt="activity image" />
-                    <div>{{ activity.description }}</div>
-                    <span>{{ activity.dateCreated }}</span>
-                </div>
-                <div class="animate-switch" ng-switch-default>
-                    <div>{{ activity.content }}</div>
-                    <div>{{ activity.description }}</div>
-                    <span>{{ activity.dateCreated }}</span>
-                </div>
-            </div>
+            <div activity-details-directive activity="activity" />
         </article>
     </section>
 </div>

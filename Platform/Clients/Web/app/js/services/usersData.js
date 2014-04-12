@@ -2,7 +2,7 @@
 
 astroPlatform.factory('usersData', function($resource, apiUrl) {
 
-    var resource = $resource(apiUrl + '/users');
+    var resource = $resource(apiUrl + '/astronauts');
 
     return {
         users: resource.query()
@@ -12,7 +12,7 @@ astroPlatform.factory('usersData', function($resource, apiUrl) {
 
 astroPlatform.factory('userProfileData', function($resource) {
 
-    var resource = $resource('/api/users/:username', { username: '@username' });
+    var resource = $resource('/api/astronauts/:username', { username: '@username' });
 
     return {
         getUserData: function(username) {
