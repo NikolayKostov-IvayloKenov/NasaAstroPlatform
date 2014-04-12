@@ -1,8 +1,9 @@
 {
-    "name": "AstroPlatform",
-    "version": "0.1",
+    "name": "NasaAstroPlatform",
+    "version": "0.0.1",
     "dependencies": {
         "architect": "0.1.11",
-        "async": "0.2.10"
+        "async": "0.2.10",
+        "express": "3.5.1"
     }
 }

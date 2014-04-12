@@ -8,6 +8,7 @@ architect.createApp(config, function createArchitectAppDlg(err, app) {
     if(err) {
         console.log(err);
     } else {
-        console.log('Application created successfully');
+        app.services.HttpServer.start();
+        console.log('Server successfully started!')
     }
 });
