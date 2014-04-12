@@ -1,0 +1,26 @@
+<div class="container clearfix" ng-controller="HomeController">
+    <section>
+        <div>
+            Search: <input type="text" ng-model="search"/>
+        </div>
+        <br />
+        <div>
+            Status:
+            <select ng-model="activity">
+                <option value="" selected="selected">All</option>
+                <option value="true">Online</option>
+                <option value="false">Offline</option>
+            </select>
+        </div>
+
+    </section>
+    <ul>
+        <li ng-repeat="user in users | filter: search | filter: activity">
+            <section>
+                <h3><a href="#/users/{{user.username}}">{{ user.name }}</a></h3>
+                <img ng-src="{{ user.imageUrl }}" src="" />
+                <span>{{ user.active | status }}</span>
+            </section>
+        </li>
+    </ul>
+</div>

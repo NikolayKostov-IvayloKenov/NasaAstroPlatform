@@ -1,20 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My AngularJS AngularJS + RequireJS App</title>
-  <link rel="stylesheet" href="css/app.css">
+    <meta charset="utf-8">
+    <title>Astro Platform</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="../css/app.css" />
 </head>
-<body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+<body ng-app="astroPlatform" ng-controller="PageController" ng-cloak>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#/users" class="navbar-brand">Astro Platform</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#/users">Users</a>
+                </li>
+                <li>
+                    <a href="#/">Menu</a>
+                </li>
+                <li>
+                    <a href="#/">Menu</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-  <div data-ng-view></div>
+<div ng-view>
 
-  <div>Angular Require seed app: v<span app-version></span></div>
+</div>
 
-  <script src="lib/requirejs/require.js" data-main="js/main.js"></script>
+<hr />
+<footer class="text-center" ng-cloak>
+    <small><strong>Author:</strong> <span>{{author}}</span></small>
+</footer>
+<hr />
+
+<script src="lib/jquery.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-resource.min.js"></script>
+<script src="lib/angular/angular-route.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers/HomeController.js"></script>
+<script src="js/controllers/PageController.js"></script>
+<script src="js/filters/activityFilter.js"></script>
+<script src="js/services/astroData.js"></script>
 </body>
 </html>
