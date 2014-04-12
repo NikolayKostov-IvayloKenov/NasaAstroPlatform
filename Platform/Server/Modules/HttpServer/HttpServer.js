@@ -17,6 +17,16 @@ HttpServer.prototype = {
         this._app.use(express.bodyParser({ keepExtensions: true, uploadDir: this._options.uploadDir }));
         this._app.use(this._allowCors);
         var ws = new WebSocketServer({server: this._server});
+        ws.on('connection', function(ws) {
+            var interval;
+            ws.on('close', function() {
+                clearInterval(interval);
+            });
+
+            interval = setInterval(function(){
+                ws.send('message');
+            }, 2000);
+        });
     },
 
     _allowCors: function (req, res, next) {
