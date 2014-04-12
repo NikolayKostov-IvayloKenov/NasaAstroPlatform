@@ -13,9 +13,8 @@ namespace NasaAstroPlatform.Desktop.Services
 
 		public string SessionId { get; set; }
 
-		public void SendMessage(string message, string sessionId)
+		public void SendMessage(string message)
 		{
-			throw new NotImplementedException ();
 		}
 	}
 }

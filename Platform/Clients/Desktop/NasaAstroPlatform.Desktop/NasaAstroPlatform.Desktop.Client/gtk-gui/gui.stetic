@@ -123,6 +123,7 @@
                 <property name="CanFocus">True</property>
                 <property name="IsEditable">True</property>
                 <property name="InvisibleChar">●</property>
+                <signal name="Activated" handler="OnEntry1Activated" />
               </widget>
               <packing>
                 <property name="AutoSize">True</property>

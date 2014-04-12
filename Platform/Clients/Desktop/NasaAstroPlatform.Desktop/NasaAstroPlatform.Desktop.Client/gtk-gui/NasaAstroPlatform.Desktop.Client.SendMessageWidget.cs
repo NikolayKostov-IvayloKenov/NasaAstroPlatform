@@ -70,6 +70,7 @@ namespace NasaAstroPlatform.Desktop.Client
 				this.Child.ShowAll ();
 			}
 			this.Hide ();
+			this.entry1.Activated += new global::System.EventHandler (this.OnEntry1Activated);
 			this.button1.Clicked += new global::System.EventHandler (this.OnButton1Clicked);
 		}
 	}
