@@ -24,9 +24,21 @@ UsersController.prototype.registerRoutes = function () {
 
 UsersController.prototype.handleAllUsersGet = function (req, res, next) {
     var self = this;
-    this._db.getAll('User', function (err, data) {
-        self._http.respondJSON(req, res, data);
-    });
+    var mockResponse = [{
+        id: 1,
+        username: 'armstrong',
+        name: 'Neil Armstrong',
+        active: true,
+        imageUrl: '/img/profile.png',
+        notifications: 0,
+        wearables: []
+    }];
+
+    self._http.respondJSON(req, res, mockResponse);
+
+//    this._db.getAll('User', function (err, data) {
+//        self._http.respondJSON(req, res, data);
+//    });
 };
 
 UsersController.prototype.handleUserRegister = function (req, res, next) {

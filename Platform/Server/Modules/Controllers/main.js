@@ -5,6 +5,7 @@ module.exports = function(options, imports, register) {
     var httpServer = imports.HttpServer;
     var controllerFactory = new ControllerFactory(db, httpServer);
     controllerFactory.register('UsersController');
+    controllerFactory.register('ActivitiesController');
 
     register();
 };

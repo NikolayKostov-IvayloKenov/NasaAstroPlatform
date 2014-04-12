@@ -5,7 +5,7 @@ Config.HttpServer = {
 };
 
 Config.Database = {
-    host: 'localhost:27017'
-}
+    host: process.env.MONGOHQ_URL || 'localhost:27017'
+};
 
 module.exports = Config;
