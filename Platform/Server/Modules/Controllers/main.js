@@ -6,6 +6,7 @@ module.exports = function(options, imports, register) {
     var controllerFactory = new ControllerFactory(db, httpServer);
     controllerFactory.register('UsersController');
     controllerFactory.register('ActivitiesController');
+    controllerFactory.register('AstronautsController');
 
     register();
 };
