@@ -1,7 +1,7 @@
 'use strict';
 
 var astroPlatform = angular
-    .module('astroPlatform', ['ngResource', 'ngRoute'])
+    .module('astroPlatform', ['ngResource', 'ngRoute', 'ngCookies'])
     .config(function($routeProvider) {
         $routeProvider
             .when('/register', {
@@ -22,3 +22,4 @@ var astroPlatform = angular
             .otherwise({redirectTo: '/users'});
     })
     .constant('author', 'Team Titan')
+    .constant('apiUrl', 'http://localhost:8080')
