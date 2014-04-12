@@ -1,9 +1,9 @@
 'use strict';
 
-astroPlatform.factory('authentication', function($resource ,$cookieStore, userSession) {
+astroPlatform.factory('authentication', function($resource ,$cookieStore, $location, userSession, apiUrl) {
 
     var resource;
-    var url = '/api/users/';
+    var url = apiUrl + '/users';
     var username = undefined;
     var isLogged = userSession.getSession() ? true : false;
 
@@ -13,6 +13,7 @@ astroPlatform.factory('authentication', function($resource ,$cookieStore, userSe
             username = user.username;
             isLogged = true;
             userSession.saveSession(data.sessionId);
+            $location.path('/users/' + user.username);
         });
     }
 
@@ -22,6 +23,7 @@ astroPlatform.factory('authentication', function($resource ,$cookieStore, userSe
             username = user.username;
             isLogged = true;
             userSession.saveSession(data.sessionId);
+            $location.path('/users/' + user.username);
         });
     }
 
@@ -32,6 +34,7 @@ astroPlatform.factory('authentication', function($resource ,$cookieStore, userSe
             username = undefined;
             isLogged = false;
             userSession.clearSession();
+            $location.path('/users');
         })
     }
 

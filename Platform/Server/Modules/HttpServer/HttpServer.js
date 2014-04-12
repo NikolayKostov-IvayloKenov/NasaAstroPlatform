@@ -37,6 +37,7 @@ HttpServer.prototype = {
     },
 
     respondJSON: function (req, res, obj) {
+        res.header("Access-Control-Allow-Origin", "*");
         res.setHeader('Content-Type', 'application/json');
         res.send(JSON.stringify(obj));
     },
