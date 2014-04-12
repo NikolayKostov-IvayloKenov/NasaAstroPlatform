@@ -13,15 +13,15 @@
           </button>
           <ul class="dropdown-menu filter-dropdown">
             <li>
-              <input id="gr1" type="radio" name="group1" ng-model="activity" value="" checked>
+              <input id="gr1" type="radio" name="group1" ng-model="status" value="" checked>
               <label for="gr1">All</label>
             </li>
             <li>
-              <input id="gr2" type="radio" name="group1" ng-model="activity" value="true">
+              <input id="gr2" type="radio" name="group1" ng-model="status" value="true">
               <label for="gr2">Online</label>
             </li>
             <li>
-              <input id="gr3" type="radio" name="group1" ng-model="activity" value="false">
+              <input id="gr3" type="radio" name="group1" ng-model="status" value="false">
               <label for="gr3">Offline</label>
             </li>
           </ul>
@@ -34,7 +34,7 @@
 
 <section class="row u-mt2">
   <ul class="list-unstyled">
-    <li ng-repeat="user in users | filter: search | filter: activity"  class="col-md-3 u-mb2">
+    <li ng-repeat="user in users | filter: search | filter: status"  class="col-md-3 u-mb2">
       <a href="#/astronauts/{{user.username}}">
         <article class="u-pr user-box">
           <img ng-src="{{ user.imageUrl }}" src="" class="user-image" />
