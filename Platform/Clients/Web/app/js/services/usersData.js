@@ -18,20 +18,20 @@ astroPlatform.factory('userProfileData', function($resource) {
         getUserData: function(username) {
             var user = {
                 id: 1,
-                username: 'armstrong',
-                name: 'Neil Armstrong',
+                username: 'hansen',
+                name: 'Jeremy Hansen',
                 status: true,
-                imageUrl: '/img/profile.png',
+                imageUrl: '/img/hansen.jpg',
                 activities: [{
-                    type: "image",
-                    description: "Test image",
-                    content: "http://gallery.artofgregmartin.com/tuts_arts/planet_images/planet_01.jpg",
-                    dateCreated: new Date(Date.now())
-                },{
                     type: "text",
-                    description: "Test text",
-                    content: "This is a test text",
-                    dateCreated: new Date(Date.now())
+                    title: "New Satellite in space",
+                    content: "We sent a new satellite in space today and everything was as smooth as we expected!",
+                    createdOn: new Date(Date.now())
+                },{
+                    type: "image",
+                    title: "A view form the cupola",
+                    content: "/img/activities/viewFromCupola_small.jpg",
+                    createdOn: new Date(Date.now())
                 }]
             };
 

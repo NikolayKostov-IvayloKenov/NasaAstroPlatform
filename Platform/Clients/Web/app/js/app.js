@@ -22,6 +22,9 @@ var astroPlatform = angular
             .when('/notifications', {
                 templateUrl: 'templates/notifications.html'
             })
+            .when('/activities', {
+                templateUrl: 'templates/activities/activities.html'
+            })
             .otherwise({redirectTo: '/astronauts'});
     })
     .constant('author', 'Team Titan')
