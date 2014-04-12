@@ -63,6 +63,14 @@
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendMessageWidget.cs" />
+    <Compile Include="gtk-gui\NasaAstroPlatform.Desktop.Client.SendMessageWidget.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\NasaAstroPlatform.Desktop.Services\NasaAstroPlatform.Desktop.Services.csproj">
+      <Project>{2CD1C407-6B28-46F4-AFD8-91AFDAF1899A}</Project>
+      <Name>NasaAstroPlatform.Desktop.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

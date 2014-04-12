@@ -1,0 +1,10 @@
+<div class="container clearfix">
+    <h2>Login</h2>
+    <form name="loginForm">
+        <label for="username">Username: </label>
+        <input type="text" required id="username" ng-model="user.username" />
+        <label for="password">Password: </label>
+        <input type="text" required id="password" ng-model="user.password" />
+        <button class="btn btn-default" ng-click="loginUser(user, loginForm)" ng-disabled="loginForm.$invalid">Login</button>
+    </form>
+</div>
