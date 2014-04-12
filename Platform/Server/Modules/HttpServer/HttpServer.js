@@ -16,20 +16,6 @@ HttpServer.prototype = {
         this._server = http.createServer(this._app);
         this._app.use(express.bodyParser({ keepExtensions: true, uploadDir: this._options.uploadDir }));
         this._app.use(this._allowCors);
-        var ws = new WebSocketServer({server: this._server});
-        ws.on('connection', function(ws) {
-            var interval;
-            ws.on('close', function() {
-                clearInterval(interval);
-            });
-
-            var counter = 1;
-
-            interval = setInterval(function(){
-                ws.send(JSON.stringify({id: counter, text: 'Hi, guys from ' + counter, url: '/someUrl/' + counter}));
-                counter++;
-            }, 2000);
-        });
     },
 
     _allowCors: function (req, res, next) {
