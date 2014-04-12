@@ -3,6 +3,6 @@
     "version": "0.1",
     "main": "main.js",
     "plugin": {
-        "consumes": ["Database", "HttpServer"]
+        "consumes": ["Database", "HttpServer", "WebsocketCommunication"]
     }
 }

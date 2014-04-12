@@ -65,6 +65,7 @@ ActivitiesController.prototype.handleActivityPost = function (req, res, next) {
     var activity = req.body;
     activity.created_on = Date.now();
     this._db.add('Activity', activity, function (err) {
+        self._ws.broadcast(activity);
         self._http.respondJSON(req, res, 'Success');
     });
 };
