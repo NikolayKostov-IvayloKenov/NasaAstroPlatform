@@ -26,79 +26,27 @@
       <file leaf-file-name="notificationsData.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/services/notificationsData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="43" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <folding />
+            <state line="7" column="14" selection-start="177" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding>
+                <marker date="1397324360253" expanded="true" signature="85:211" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authentication.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="authentication.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/services/authentication.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="28" selection-start="462" selection-end="462" vertical-scroll-proportion="0.69279" vertical-offset="0" max-vertical-offset="918">
+            <state line="2" column="58" selection-start="64" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notifications.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/notifications.html">
+      <file leaf-file-name="register.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="170">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/users.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="43" selection-start="1675" selection-end="1675" vertical-scroll-proportion="-12.153846" vertical-offset="415" max-vertical-offset="969">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/Modules/Controllers/UsersController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="15" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.0" vertical-offset="1375" max-vertical-offset="1751">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpServer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/Modules/HttpServer/HttpServer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="693" max-vertical-offset="1292">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthenticationController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/controllers/AuthenticationController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="224" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivitiesController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/Modules/Controllers/ActivitiesController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usersData.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/services/usersData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="28" selection-start="619" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="799">
+            <state line="18" column="64" selection-start="738" selection-end="738" vertical-scroll-proportion="-1.9615384" vertical-offset="255" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -107,7 +55,61 @@
       <file leaf-file-name="NotificationsController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/controllers/NotificationsController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="29" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+            <state line="6" column="26" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clients/Web/app/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="323">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clients/Web/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="57" selection-start="1340" selection-end="1340" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1411">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpServer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Modules/HttpServer/HttpServer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="1700">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/users.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="64" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="935">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/notifications.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="10" selection-start="145" selection-end="145" vertical-scroll-proportion="0.06331471" vertical-offset="0" max-vertical-offset="537">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="32" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -124,16 +126,19 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Clients/Web/app/js/services/usersData.js" />
-        <option value="$PROJECT_DIR$/Clients/Web/app/templates/register.html" />
-        <option value="$PROJECT_DIR$/Clients/Web/app/index.html" />
         <option value="$PROJECT_DIR$/Clients/Web/app/js/services/authentication.js" />
         <option value="$PROJECT_DIR$/Clients/Web/app/js/controllers/AuthenticationController.js" />
-        <option value="$PROJECT_DIR$/Clients/Web/app/js/app.js" />
+        <option value="$PROJECT_DIR$/Server/Modules/Controllers/UsersController.js" />
+        <option value="$PROJECT_DIR$/Clients/Web/app/templates/register.html" />
         <option value="$PROJECT_DIR$/Clients/Web/app/js/services/notificationsData.js" />
         <option value="$PROJECT_DIR$/Clients/Web/app/templates/users.html" />
-        <option value="$PROJECT_DIR$/Server/Modules/Controllers/UsersController.js" />
-        <option value="$PROJECT_DIR$/Clients/Web/app/js/controllers/NotificationsController.js" />
+        <option value="$PROJECT_DIR$/Clients/Web/app/templates/home.html" />
+        <option value="$PROJECT_DIR$/Clients/Web/app/js/app.js" />
+        <option value="$PROJECT_DIR$/Clients/Web/app/home.html" />
+        <option value="$PROJECT_DIR$/Clients/Web/app/index.html" />
         <option value="$PROJECT_DIR$/Server/Modules/HttpServer/HttpServer.js" />
+        <option value="$PROJECT_DIR$/Clients/Web/app/js/controllers/NotificationsController.js" />
+        <option value="$PROJECT_DIR$/Clients/Web/app/templates/notifications.html" />
       </list>
     </option>
   </component>
@@ -445,18 +450,42 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Server" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\NASAPlatform\NasaAstroPlatform\Platform\Clients\Web\app" />
+    </key>
+  </component>
   <component name="RunManager" selected="Node.js.Unnamed">
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/Server">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <browser start="false" url="" with-js-debugger="false" />
-      <RunnerSettings RunnerId="NodeJS.debug" />
-      <ConfigurationWrapper RunnerId="NodeJS.debug" />
       <method />
     </configuration>
     <list size="1">
@@ -480,11 +509,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5967213" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40327868" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -509,27 +538,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="59" selection-start="384" selection-end="393" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="62" selection-start="394" selection-end="406" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Clients/Web/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="49" selection-start="2492" selection-end="2492" vertical-scroll-proportion="-13.576923" vertical-offset="701" max-vertical-offset="1377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/controllers/PageController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563">
@@ -537,30 +545,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="817" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/controllers/UsersController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/users.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="43" selection-start="1675" selection-end="1675" vertical-scroll-proportion="-12.153846" vertical-offset="415" max-vertical-offset="969">
           <folding />
         </state>
       </provider>
@@ -575,34 +562,15 @@
     <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/services/usersData.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="28" selection-start="619" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/services/notificationsData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="43" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/controllers/NotificationsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
+          <folding>
+            <marker date="1397311807627" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/Modules/Controllers/UsersController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="15" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.0" vertical-offset="1375" max-vertical-offset="1751">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/Modules/HttpServer/HttpServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.0" vertical-offset="693" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
@@ -614,9 +582,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="64" selection-start="738" selection-end="738" vertical-scroll-proportion="-1.9615384" vertical-offset="255" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/services/authentication.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="462" selection-end="462" vertical-scroll-proportion="0.69279" vertical-offset="0" max-vertical-offset="918">
+        <state line="2" column="58" selection-start="64" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/services/notificationsData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="14" selection-start="177" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding>
+            <marker date="1397324360253" expanded="true" signature="85:211" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="64" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="32" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clients/Web/app/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="302" selection-end="302" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clients/Web/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="57" selection-start="1340" selection-end="1340" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Modules/HttpServer/HttpServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/controllers/NotificationsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="26" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="145" selection-end="145" vertical-scroll-proportion="0.06331471" vertical-offset="0" max-vertical-offset="537">
           <folding />
         </state>
       </provider>

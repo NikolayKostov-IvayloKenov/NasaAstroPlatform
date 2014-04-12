@@ -2,15 +2,9 @@
 
 astroPlatform.factory('notificationsData', function($resource, apiUrl) {
 
-    var notificationSocket;
-
-    if ("WebSocket" in window) {
-        notificationSocket = new WebSocket('ws://' + apiUrl);
-    }
+    var notificationSocket = new WebSocket('ws://localhost:8080');
 
     return {
-        onNew: notificationSocket.onmessage,
-        onOpen: notificationSocket.onopen,
-        onClose: notificationSocket.onclose
+        socket: notificationSocket
     }
 })

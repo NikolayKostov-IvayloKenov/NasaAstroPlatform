@@ -4,11 +4,10 @@ astroPlatform.controller('NotificationsController',
     function NotificationsController($scope, notificationsData) {
 
         $scope.notifications = [];
-        $scope.sort = '-1';
+        $scope.sort = '-id';
 
-        notificationsData.onNew = function(evt) {
-            console.log(evt);
-            var notification = evt.data;
+        notificationsData.socket.onmessage = function(evt) {
+            var notification = JSON.parse(evt.data);
             $scope.$apply(function(){
                 $scope.notifications.push(notification);
             })

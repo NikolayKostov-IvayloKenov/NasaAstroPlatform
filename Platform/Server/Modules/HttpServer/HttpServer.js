@@ -23,8 +23,11 @@ HttpServer.prototype = {
                 clearInterval(interval);
             });
 
+            var counter = 1;
+
             interval = setInterval(function(){
-                ws.send('message');
+                ws.send(JSON.stringify({id: counter, text: 'Hi, guys from ' + counter, url: '/someUrl/' + counter}));
+                counter++;
             }, 2000);
         });
     },

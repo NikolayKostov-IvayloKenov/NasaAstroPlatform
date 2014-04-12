@@ -1,5 +1,11 @@
 <div class="container clearfix" ng-controller="NotificationsController">
-    <div ng-repeat="notification in notifications">
-        <span><a href="{{ notification.url }}">{{ notification.text }}</a></span>
+    <h2 class="text-center">Waiting for notifications...</h2>
+    <br />
+    <div ng-repeat="notification in notifications | orderBy: sort">
+        <div class="panel text-center">
+            <span class="panel-body">
+                <a href="{{ notification.url }}">{{ notification.text }}</a>
+            </span>
+        </div>
     </div>
 </div>
