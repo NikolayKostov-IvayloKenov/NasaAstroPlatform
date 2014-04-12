@@ -23,11 +23,13 @@ astroPlatform.factory('userProfileData', function($resource) {
                 status: true,
                 imageUrl: '/img/hansen.jpg',
                 activities: [{
+                    id: 2,
                     type: "text",
                     title: "New Satellite in space",
                     content: "We sent a new satellite in space today and everything was as smooth as we expected!",
                     createdOn: new Date(Date.now())
                 },{
+                    id: 4,
                     type: "image",
                     title: "A view form the cupola",
                     content: "/img/activities/viewFromCupola_small.jpg",

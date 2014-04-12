@@ -2,6 +2,6 @@
 
 astroPlatform.controller('ActivitiesController',
     function ActivitiesController($scope, activitiesData) {
-        $scope.activities = activitiesData.allActivities;
+        $scope.activities = activitiesData.getAllActivities();
     }
 );
