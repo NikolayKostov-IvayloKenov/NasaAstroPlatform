@@ -1,10 +1,31 @@
 <div class="container clearfix">
-    <h2>Login</h2>
-    <form name="loginForm">
-        <label for="username">Username: </label>
-        <input type="text" required id="username" ng-model="user.username" />
-        <label for="password">Password: </label>
-        <input type="text" required id="password" ng-model="user.password" />
-        <button class="btn btn-default" ng-click="loginUser(user, loginForm)" ng-disabled="loginForm.$invalid">Login</button>
+  <div class="row">
+
+    <div class="col-md-4 col-md-offset-4">
+
+      <form name="loginForm">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="u-tac">Login</h1>
+          </div>
+          <div class="panel-body">
+
+           <div class="form-group">
+            <label for="inputEmail" class="control-label u-db">Email</label>
+            <input type="text" class="form-control" id="username" ng-model="user.username" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="control-label u-db">Password</label>
+            <input type="password" class="form-control" id="password" ng-model="user.password" placeholder="Password">
+          </div>
+
+          <div class="form-group u-mt2">
+            <button type="submit" class="btn btn-primary u-db col-md-12 u-full" ng-click="loginUser(user, loginForm)" ng-disabled="loginForm.$invalid">Login</button>
+          </div>
+        </div>
+      </div>
     </form>
+
+  </div>
+</div>
 </div>

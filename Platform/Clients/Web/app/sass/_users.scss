@@ -11,7 +11,7 @@
     cursor: pointer;
 
     &:hover {
-      background: #485563;
+      background: $dark-blue;
     }
 
     input {
@@ -27,22 +27,55 @@
     }
 
     input[type="radio"]:checked+label {
-      background: #485563;
+      background: $dark-blue;
       font-weight: bold;
     }
+  }
+}
+.user-box {
+  @extend %none-user-select;
+
+  &:hover .user-image {
+    opacity: 1;
   }
 }
 
 .user-image {
   width: 100%;
   max-width: 100%;
+  transition: opacity 400ms ease;
+  opacity: .8;
 }
+
+$status-line-height: 4px;
 
 .user-info-box {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 10px 5px;
+  padding: 10px 5px (10px + $status-line-height) 10px;
+  background: $dark-blue;
+  background: rgba(#000, .4);
+
+  h2 {
+    color: #ebebeb;
+    margin: 0;
+  }
+
+  .user-status {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: $status-line-height;
+    background: $neutral;
+    opacity: .6;
+
+    &.online {
+      background: $success;
+    }
+  }
+
 }
 
