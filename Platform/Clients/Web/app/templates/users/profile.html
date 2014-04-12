@@ -1,0 +1,29 @@
+<div class="container clearfix" ng-controller="UserProfileController">
+    <section class="userData">
+        <h3>{{ userData.username }}</h3>
+        <img src="{{ userData.imageUrl }}" alt="user profile image" />
+        <div>
+            <span class="userStatus">{{ userData.status }}</span>
+        </div>
+    </section>
+    <section class="userActivities">
+        <article ng-repeat="activity in userData.activities">
+            <div class="animate-switch-container"
+                 ng-switch on="activity.type">
+                <div class="animate-switch" ng-switch-when="nasa">
+
+                </div>
+                <div class="animate-switch" ng-switch-when="image">
+                    <img src="{{ activity.content }}" alt="activity image" />
+                    <div>{{ activity.description }}</div>
+                    <span>{{ activity.dateCreated }}</span>
+                </div>
+                <div class="animate-switch" ng-switch-default>
+                    <div>{{ activity.content }}</div>
+                    <div>{{ activity.description }}</div>
+                    <span>{{ activity.dateCreated }}</span>
+                </div>
+            </div>
+        </article>
+    </section>
+</div>

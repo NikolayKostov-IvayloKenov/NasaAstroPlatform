@@ -13,6 +13,9 @@ var astroPlatform = angular
             .when('/users', {
                 templateUrl: 'templates/users.html'
             })
+            .when('/users/:username', {
+                templateUrl: 'templates/users/profile.html'
+            })
             .when('/notifications', {
                 templateUrl: 'templates/notifications.html'
             })
