@@ -1,11 +1,16 @@
 using System;
 using Gtk;
+using NasaAstroPlatform.Desktop.Services;
 
 public partial class MainWindow: Gtk.Window
 {
+	private const string BuiltInSessionId = "vasko";
+
 	public MainWindow () : base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
+		this.sendmessagewidget2.MessageService = new MessageSenderService (BuiltInSessionId);
+		this.sendmessagewidget3.MessageService = new NasaMessageSenderService (BuiltInSessionId);
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
