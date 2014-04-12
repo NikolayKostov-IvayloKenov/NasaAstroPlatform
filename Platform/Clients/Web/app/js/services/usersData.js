@@ -1,6 +1,6 @@
 'use strict';
 
-astroPlatform.factory('astroData', function($resource) {
+astroPlatform.factory('usersData', function($resource) {
 
     var resource = $resource('/api/users/');
 

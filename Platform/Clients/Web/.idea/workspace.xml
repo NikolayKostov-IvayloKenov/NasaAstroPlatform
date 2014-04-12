@@ -23,10 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="338" selection-end="338" vertical-scroll-proportion="0.3321492" vertical-offset="0" max-vertical-offset="563">
+            <state line="10" column="53" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifications.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/notifications.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationsController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/controllers/NotificationsController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="26" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
               <folding />
             </state>
           </provider>
@@ -35,43 +53,34 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="48" selection-start="1883" selection-end="1883" vertical-scroll-proportion="-15.576923" vertical-offset="530" max-vertical-offset="1088">
+            <state line="47" column="30" selection-start="1459" selection-end="1459" vertical-scroll-proportion="-9.538462" vertical-offset="551" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/controllers/PageController.js">
+      <file leaf-file-name="notificationsData.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/services/notificationsData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+            <state line="4" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LICENSE" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/LICENSE">
+      <file leaf-file-name="UsersController.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/controllers/UsersController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="6" column="2" selection-start="157" selection-end="157" vertical-scroll-proportion="0.1811723" vertical-offset="0" max-vertical-offset="563">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/controllers/HomeController.js">
+      <file leaf-file-name="activityFilter.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/filters/activityFilter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="15" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
+            <state line="11" column="3" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -86,19 +95,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="albumStatusFilter.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/filters/albumStatusFilter.js">
+      <file leaf-file-name="PageController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/controllers/PageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+            <state line="0" column="0" selection-start="0" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="astroData.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/services/astroData.js">
+      <file leaf-file-name="usersData.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/services/usersData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="28" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+            <state line="25" column="20" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -114,22 +123,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/js/controllers/module.js" />
-        <option value="$PROJECT_DIR$/app/js/directives/module.js" />
-        <option value="$PROJECT_DIR$/app/js/filters/module.js" />
-        <option value="$PROJECT_DIR$/app/js/services/module.js" />
-        <option value="$PROJECT_DIR$/app/js/bootstrap.js" />
-        <option value="$PROJECT_DIR$/app/js/controllers/page-controller.js" />
-        <option value="$PROJECT_DIR$/app/js/controllers/my-ctrl-2.js" />
         <option value="$PROJECT_DIR$/app/js/controllers/index.js" />
-        <option value="$PROJECT_DIR$/app/js/app.js" />
-        <option value="$PROJECT_DIR$/app/js/services/astroData.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/templates/home.html" />
-        <option value="$PROJECT_DIR$/app/js/controllers/HomeController.js" />
-        <option value="$PROJECT_DIR$/app/js/controllers/PageController.js" />
         <option value="$PROJECT_DIR$/app/js/directives/albumHomeDirective.js" />
         <option value="$PROJECT_DIR$/app/js/filters/albumStatusFilter.js" />
+        <option value="$PROJECT_DIR$/app/js/filters/activityFilter.js" />
+        <option value="$PROJECT_DIR$/app/templates/home.html" />
+        <option value="$PROJECT_DIR$/app/templates/users.html" />
+        <option value="$PROJECT_DIR$/app/js/services/astroData.js" />
+        <option value="$PROJECT_DIR$/app/js/services/usersData.js" />
+        <option value="$PROJECT_DIR$/app/js/controllers/HomeController.js" />
+        <option value="$PROJECT_DIR$/app/js/app.js" />
+        <option value="$PROJECT_DIR$/app/js/controllers/NotificationsController.js" />
+        <option value="$PROJECT_DIR$/app/templates/notifications.html" />
+        <option value="$PROJECT_DIR$/app/js/services/notificationsData.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/js/controllers/PageController.js" />
+        <option value="$PROJECT_DIR$/app/js/controllers/UsersController.js" />
       </list>
     </option>
   </component>
@@ -220,11 +229,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -425,30 +430,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/app/templates/users.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
+        <state line="0" column="0" selection-start="0" selection-end="839" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="527">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="48" selection-start="1883" selection-end="1883" vertical-scroll-proportion="-15.576923" vertical-offset="530" max-vertical-offset="1088">
+        <state line="10" column="53" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/controllers/HomeController.js">
+    <entry file="file://$PROJECT_DIR$/app/templates/notifications.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="15" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+        <state line="2" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="170">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/controllers/PageController.js">
+    <entry file="file://$PROJECT_DIR$/app/js/filters/activityFilter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+        <state line="11" column="3" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <folding />
         </state>
       </provider>
@@ -460,23 +465,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/filters/albumStatusFilter.js">
+    <entry file="file://$PROJECT_DIR$/app/js/controllers/NotificationsController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+        <state line="4" column="26" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/services/astroData.js">
+    <entry file="file://$PROJECT_DIR$/app/js/services/usersData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="28" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+        <state line="25" column="20" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/app.js">
+    <entry file="file://$PROJECT_DIR$/app/js/services/notificationsData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="338" selection-end="338" vertical-scroll-proportion="0.3321492" vertical-offset="0" max-vertical-offset="563">
+        <state line="4" column="0" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="30" selection-start="1459" selection-end="1459" vertical-scroll-proportion="-9.538462" vertical-offset="551" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/controllers/PageController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/controllers/UsersController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="2" selection-start="157" selection-end="157" vertical-scroll-proportion="0.1811723" vertical-offset="0" max-vertical-offset="563">
           <folding />
         </state>
       </provider>
