@@ -1,5 +1,5 @@
 <div class="container clearfix" ng-controller="NotificationsController">
-    <div>
-        {{ hi }}
+    <div ng-repeat="notification in notifications">
+        <span><a href="{{ notification.url }}">{{ notification.text }}</a></span>
     </div>
 </div>
