@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NasaAstroPlatform.Desktop.Client", "NasaAstroPlatform.Desktop.Client\NasaAstroPlatform.Desktop.Client.csproj", "{5CAEAB87-1F5D-4C22-B5A1-C7302AF8A971}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CAEAB87-1F5D-4C22-B5A1-C7302AF8A971}.Debug|x86.ActiveCfg = Debug|x86
+		{5CAEAB87-1F5D-4C22-B5A1-C7302AF8A971}.Debug|x86.Build.0 = Debug|x86
+		{5CAEAB87-1F5D-4C22-B5A1-C7302AF8A971}.Release|x86.ActiveCfg = Release|x86
+		{5CAEAB87-1F5D-4C22-B5A1-C7302AF8A971}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = NasaAstroPlatform.Desktop.Client\NasaAstroPlatform.Desktop.Client.csproj
+	EndGlobalSection
+EndGlobal
