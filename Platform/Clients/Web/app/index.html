@@ -48,11 +48,11 @@
 
     </div>
 
-    <hr />
     <footer class="text-center" ng-cloak>
-        <small><strong>Authors:</strong> <span>{{author}}</span></small>
+        <small>
+        by  <a href=#/about>{{author}}</a>
+        </small>
     </footer>
-    <hr />
 
     <script src="lib/jquery.min.js"></script>
     <script src="lib/linq.min.js"></script>
@@ -68,6 +68,7 @@
     <script src="js/controllers/PageController.js"></script>
     <script src="js/controllers/NotificationsController.js"></script>
     <script src="js/filters/activityFilter.js"></script>
+    <script src="js/filters/userNameBreak.js"></script>
     <script src="js/services/usersData.js"></script>
     <script src="js/services/notificationsData.js"></script>
     <script src="js/services/authentication.js"></script>

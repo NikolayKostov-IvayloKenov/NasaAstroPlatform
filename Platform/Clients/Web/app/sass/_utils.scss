@@ -48,6 +48,10 @@
     position: relative;
   }
 
+  .u-full {
+    width: 100%;
+  }
+
   @for $i from 1 through 5 {
     .u-mb#{$i} {
       margin-bottom: 10px*$i;

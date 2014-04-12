@@ -1,3 +1,33 @@
+.user-box {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: #485563;
+}
+
 .astro-logo {
   display: block;
   width: 150px;
@@ -37,9 +67,15 @@
   font-weight: bold;
 }
 
+.user-box:hover .user-image {
+  opacity: 1;
+}
+
 .user-image {
   width: 100%;
   max-width: 100%;
+  transition: opacity 400ms ease;
+  opacity: .8;
 }
 
 .user-info-box {
@@ -47,7 +83,25 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 10px 5px;
+  padding: 10px 5px 14px 10px;
+  background: #485563;
+  background: rgba(0, 0, 0, 0.4);
+}
+.user-info-box h2 {
+  color: #ebebeb;
+  margin: 0;
+}
+.user-info-box .user-status {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background: #4e5d6c;
+  opacity: .6;
+}
+.user-info-box .user-status.online {
+  background: #5cb85c;
 }
 
 #mod .u-tac {
@@ -85,6 +139,9 @@
 }
 #mod .u-pr {
   position: relative;
+}
+#mod .u-full {
+  width: 100%;
 }
 #mod .u-mb1 {
   margin-bottom: 10px;

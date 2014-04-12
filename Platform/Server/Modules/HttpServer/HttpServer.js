@@ -1,31 +1,23 @@
 'use strict';
 
 var express = require('express');
-var http = require('http');
-var WebSocket = require('faye-websocket');
+var http = require('http')
 
-var HttpServer = function(options) {
+var HttpServer = function (options) {
     this._options = options;
     this._app = null;
     this._server = null;
 };
 
 HttpServer.prototype = {
-    init: function() {
+    init: function () {
         this._app = express();
         this._server = http.createServer(this._app);
         this._app.use(express.bodyParser({ keepExtensions: true, uploadDir: this._options.uploadDir }));
     },
 
-    start: function() {
+    start: function () {
         var port = this._options.port;
-        this._server.addListener('upgrade', function(request, socket, head) {
-            var ws = new WebSocket(request, socket, head);
-            setInterval(function() {
-                ws.send('pesho');
-            }, 3000);
-            console.log('Notifications started');
-        });
         this._server.listen(port);
     },
 
@@ -45,7 +37,9 @@ HttpServer.prototype = {
     },
 
     respondJSON: function (req, res, obj) {
-        res.setHeader("Access-Control-Allow-Origin", "*");
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT');
+        res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
         res.setHeader('Content-Type', 'application/json');
         res.send(JSON.stringify(obj));
     },

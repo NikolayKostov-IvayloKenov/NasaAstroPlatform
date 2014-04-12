@@ -34,18 +34,16 @@
 
 <section class="row u-mt2">
   <ul class="list-unstyled">
-    <li ng-repeat="user in users | filter: search | filter: activity" class="col-md-3">
+    <li ng-repeat="user in users | filter: search | filter: activity"  class="col-md-3 u-mb2">
       <a href="#/users/{{user.username}}">
-        <article class="u-pr">
+        <article class="u-pr user-box">
           <img ng-src="{{ user.imageUrl }}" src="" class="user-image" />
           <div class="user-info-box">
-            <h3>{{ user.name }}</h3>
-            <span>{{ user.active | status }}</span>
-            <span>{{ user.activities.length }}</span>
+            <h2>{{user.name | userSpaceBreak}}</h2>
+            <div class="user-status {{ user.active | status }}"></div>
           </div>
         </article>
       </a>
     </li>
   </ul>
-</div>
 </section>

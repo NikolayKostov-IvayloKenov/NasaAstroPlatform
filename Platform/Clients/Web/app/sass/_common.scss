@@ -1,3 +1,31 @@
+%none-user-select {
+ -webkit-user-select: none;  /* Chrome all / Safari all */
+ -moz-user-select: none;     /* Firefox all */
+ -ms-user-select: none;      /* IE 10+ */
+
+ /* No support for these yet, use at own risk */
+ -o-user-select: none;
+ user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: $dark-blue;
+}
+
 .astro-logo {
   display: block;
   width: 150px;

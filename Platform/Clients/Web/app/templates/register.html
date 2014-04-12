@@ -1,10 +1,35 @@
 <div class="container clearfix">
-    <h2>Register</h2>
-    <form name="registrationForm">
-        <label for="username">Username: </label>
-        <input type="text" required id="username" ng-model="user.username" />
-        <label for="password">Password: </label>
-        <input type="text" required id="password" ng-model="user.password" />
-        <button class="btn btn-default" ng-click="registerUser(user, registrationForm)" ng-disabled="registrationForm.$invalid">Register</button>
+  <div class="row">
+
+    <div class="col-md-4 col-md-offset-4">
+
+      <form name="registrationForm">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="u-tac">Register</h1>
+          </div>
+          <div class="panel-body">
+
+           <div class="form-group">
+            <label for="inputEmail" class="control-label u-db">Email</label>
+            <input type="text" class="form-control" id="username" ng-model="user.username" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="control-label u-db">Password</label>
+            <input type="password" class="form-control" id="password" ng-model="user.password" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="control-label u-db">Repeat Password</label>
+            <input type="password" class="form-control" id="password" ng-model="user.password2" placeholder="Password">
+          </div>
+
+          <div class="form-group u-mt2">
+            <button type="submit" class="btn btn-primary u-db col-md-12 u-full" ng-click="loginUser(user, registrationForm)" ng-disabled="registrationForm.$invalid">Register</button>
+          </div>
+        </div>
+      </div>
     </form>
+
+  </div>
+</div>
 </div>
