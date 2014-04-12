@@ -4,9 +4,9 @@ var astroPlatform = angular
     .module('astroPlatform', ['ngResource', 'ngRoute'])
     .config(function($routeProvider) {
         $routeProvider
-            .when('/home', {
-                templateUrl: 'templates/home.html'
+            .when('/users', {
+                templateUrl: 'templates/users.html'
             })
-            .otherwise({redirectTo: '/home'});
+            .otherwise({redirectTo: '/users'});
     })
     .constant('author', 'Team Titan')

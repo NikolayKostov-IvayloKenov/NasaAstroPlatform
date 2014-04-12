@@ -1,7 +1,7 @@
 'use strict';
 
 astroPlatform.controller('HomeController',
-    function HomeController($scope) {
-
+    function HomeController($scope, astroData) {
+        $scope.users = astroData.users;
     }
 );
