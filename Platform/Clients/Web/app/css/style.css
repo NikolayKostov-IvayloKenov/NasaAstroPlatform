@@ -15,6 +15,7 @@
 html,
 body {
   height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -37,6 +38,30 @@ footer {
 }
 .astro-logo:hover {
   opacity: .6;
+}
+
+.activity-row {
+  color: #000;
+}
+.activity-row a {
+  display: block;
+  transition: background 400ms ease;
+  padding: 10px;
+  color: #fff;
+}
+.activity-row a:hover {
+  background: rgba(43, 62, 80, 0.5);
+  text-decoration: none;
+}
+.activity-row h4 {
+  display: inline-block;
+  margin: 0;
+}
+.activity-row .time {
+  display: inline-block;
+}
+.activity-row img {
+  max-height: 40px;
 }
 
 .ng-scope
@@ -104,6 +129,31 @@ footer {
 }
 .user-info-box .user-status.online {
   background: #5cb85c;
+}
+
+.stat-box {
+  background: #485563;
+  padding: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.stat-box img {
+  width: auto;
+  max-width: 100%;
+}
+.stat-box > h3 {
+  margin: 0;
+}
+.stat-box hr {
+  margin: 10px 0 0 0;
+}
+.stat-box .heart-stat {
+  background: #d9534f;
+  padding: 5px;
+}
+.stat-box .loc-stat {
+  background: #5cb85c;
+  padding: 5px;
 }
 
 #mod .u-tac {

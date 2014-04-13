@@ -11,6 +11,7 @@
 html,
 body {
   height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -33,5 +34,34 @@ footer {
 
   &:hover {
     opacity: .6;
+  }
+}
+
+.activity-row {
+  color: #000;
+
+  a {
+    display: block;
+    transition: background 400ms ease;
+    padding: 10px;
+    color: #fff;
+
+    &:hover {
+      background: rgba(#2B3E50, .5);
+      text-decoration: none;
+    }
+  }
+
+  h4 {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .time {
+    display: inline-block;
+  }
+
+  img {
+    max-height: 40px;
   }
 }
