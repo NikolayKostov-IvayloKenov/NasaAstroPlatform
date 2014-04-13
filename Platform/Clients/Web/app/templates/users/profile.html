@@ -31,7 +31,7 @@
                 <div class="stat-box">
                     <div class="heart-stat u-tac">
                         <span class="glyphicon glyphicon-heart u-db" style="font-size: 3.5em;"></span>
-                        <strong>70</strong> bpm
+                        <strong>70</strong> bpm <span id="bpm-signal">.</span>
                     </div>
                 </div>
                 <div class="stat-box">
@@ -42,16 +42,15 @@
                 </div>
             </div>
 
-
             <div class="col-xs-12">
                 <div class="stat-box {{ useData.status | status }} u-mt1">
                     Mission progress:
                     <hr>
                     <div class="mission-progress">
-                        <img src="../img/shuttle.png"  height="25" alt="">
+                        <img src="../img/shuttle.png" id="TheShuttle" height="25" alt="" >
                     </div>
                     <div class="u-mt6">
-                       <div class="pull-left">
+                     <div class="pull-left">
                         <h6>Start: <strong class="u-db u-mt1">12.04/10:00:27</strong> </h6>
                     </div>
                     <div class="pull-right">
@@ -66,10 +65,10 @@
 <div class="row">
     <div class="col-sm-3 col-xs-6" >
         <div class="stat-box {{ useData.status | status }} u-mt1">
-           <span class="glyphicon glyphicon-ok u-mr1"></span>
-           <h5 class="u-di">{{ userData.status | status }}</h5>
-       </div>
-   </div>
+         <span class="glyphicon glyphicon-ok u-mr1"></span>
+         <h5 class="u-di">{{ userData.status | status }}</h5>
+     </div>
+ </div>
 
 </div>
 
@@ -77,3 +76,29 @@
 </div>
 
 </div>
+
+<script>
+$(function(){
+        // alert('asd');
+        var $Shuttle = $('#TheShuttle'),
+        pixels = 20,
+        count= 0;
+
+        setInterval(
+            function(){
+                // alert("Hello")
+                pixels = pixels + 1;
+                count = count + 1
+
+                $Shuttle.css('left', pixels+'px')
+                if(count%5==0) {
+                    // alert("asd")
+                    // $('#bpm-signal').hide();
+                } else {
+                    // $('#bpm-signal').show();
+                }
+            },400
+            );
+
+    })
+</script>
