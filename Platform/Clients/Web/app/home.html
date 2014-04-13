@@ -22,7 +22,7 @@
                 </button>
             </div>
             <div class="navbar-collapse collapse pull-right" id="navbar-main">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" ng-if="isLogged">
                     <li>
                         <a href="#/astronauts">Astronauts</a>
                     </li>
@@ -36,10 +36,6 @@
                 <ul class="nav navbar-nav pull-right" ng-if="isLogged">
                     <li><a href="#">{{ username }}</a></li>
                     <li><a href="#/login" ng-click="logout()">Logout</a></li>
-                </ul>
-                <ul class="nav navbar-nav pull-right" ng-if="!isLogged">
-                    <li><a href="#/register">Register</a></li>
-                    <li><a href="#/login">Login</a></li>
                 </ul>
             </div>
         </div>

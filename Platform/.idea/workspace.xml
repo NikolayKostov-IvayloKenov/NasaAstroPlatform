@@ -23,10 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Clients/Web/app/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="57" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.4265233" vertical-offset="204" max-vertical-offset="1513">
+            <state line="38" column="21" selection-start="1827" selection-end="1827" vertical-scroll-proportion="9.269231" vertical-offset="887" max-vertical-offset="1445">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="71" selection-start="411" selection-end="419" vertical-scroll-proportion="-3.6538463" vertical-offset="126" max-vertical-offset="765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="71" selection-start="409" selection-end="409" vertical-scroll-proportion="0.3119266" vertical-offset="51" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -72,7 +90,6 @@
         <option value="$PROJECT_DIR$/Clients/Web/app/js/services/usersData.js" />
         <option value="$PROJECT_DIR$/Clients/Web/app/js/services/authentication.js" />
         <option value="$PROJECT_DIR$/Server/Modules/Controllers/UsersController.js" />
-        <option value="$PROJECT_DIR$/Clients/Web/app/templates/register.html" />
         <option value="$PROJECT_DIR$/Clients/Web/app/js/services/notificationsData.js" />
         <option value="$PROJECT_DIR$/Clients/Web/app/templates/users.html" />
         <option value="$PROJECT_DIR$/Clients/Web/app/templates/home.html" />
@@ -81,9 +98,10 @@
         <option value="$PROJECT_DIR$/Server/Modules/HttpServer/HttpServer.js" />
         <option value="$PROJECT_DIR$/Clients/Web/app/js/app.js" />
         <option value="$PROJECT_DIR$/Clients/Web/app/index.html" />
-        <option value="$PROJECT_DIR$/Clients/Web/app/templates/login.html" />
         <option value="$PROJECT_DIR$/Clients/Web/app/js/controllers/AuthenticationController.js" />
         <option value="$PROJECT_DIR$/Clients/Web/app/home.html" />
+        <option value="$PROJECT_DIR$/Clients/Web/app/templates/register.html" />
+        <option value="$PROJECT_DIR$/Clients/Web/app/templates/login.html" />
       </list>
     </option>
   </component>
@@ -447,7 +465,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -506,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="64" selection-start="738" selection-end="738" vertical-scroll-proportion="-1.9615384" vertical-offset="255" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/services/notificationsData.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="14" selection-start="177" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -554,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="33" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.7174312" vertical-offset="51" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Clients/Web/app/js/controllers/NotificationsController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="26" selection-start="194" selection-end="194" vertical-scroll-proportion="0.1811723" vertical-offset="0" max-vertical-offset="563">
@@ -598,7 +602,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Clients/Web/app/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="57" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.4265233" vertical-offset="204" max-vertical-offset="1513">
+        <state line="38" column="21" selection-start="1827" selection-end="1827" vertical-scroll-proportion="9.269231" vertical-offset="887" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="71" selection-start="411" selection-end="419" vertical-scroll-proportion="-3.6538463" vertical-offset="126" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Clients/Web/app/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="71" selection-start="409" selection-end="409" vertical-scroll-proportion="0.3119266" vertical-offset="51" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
