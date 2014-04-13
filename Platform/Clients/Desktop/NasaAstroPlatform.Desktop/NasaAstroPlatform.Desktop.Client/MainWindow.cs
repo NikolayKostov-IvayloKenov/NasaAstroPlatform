@@ -9,8 +9,8 @@ public partial class MainWindow: Gtk.Window
 	public MainWindow () : base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
-		this.sendmessagewidget2.MessageService = new MessageSenderService (BuiltInSessionId);
-		this.sendmessagewidget3.MessageService = new NasaMessageSenderService (BuiltInSessionId);
+		this.sendmessagewidget1.MessageService = new MessageSenderService (BuiltInSessionId);
+		this.sendmessagewidget2.MessageService = new NasaMessageSenderService (BuiltInSessionId);
 	}
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
