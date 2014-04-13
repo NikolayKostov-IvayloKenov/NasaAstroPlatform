@@ -38,7 +38,7 @@ Database.prototype = {
 
     getLast: function(type, callback) {
         var DataType = this._getDataType(type);
-        DataType.findOne({}, {}, { sort: { 'created_at' : 1 } }, function(err, result) {
+        DataType.findOne({}, {}, { sort: { 'created_on' : -1 } }, function(err, result) {
             callback(err, result);
         });
     },
