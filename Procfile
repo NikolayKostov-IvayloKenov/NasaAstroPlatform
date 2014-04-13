@@ -1,1 +1,1 @@
-web: node ./Platform/Server/app.js
+web: sh -c 'cd ./Platform/Server/ && node app.js'
