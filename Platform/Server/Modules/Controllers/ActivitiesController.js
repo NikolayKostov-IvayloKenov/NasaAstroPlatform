@@ -74,7 +74,8 @@ ActivitiesController.prototype.handleActivityGetLast = function (req, res, next)
     var self = this;
     this._db.getLast('Activity', function (err, data) {
         var activityContent = data.content;
-        self._http.respondJSON(req, res, activityContent);
+        res.send(data.content);
+        // self._http.respondJSON(req, res, activityContent);
     });
 };
 
