@@ -38,7 +38,7 @@ angular.module('ngCookies', ['ng']).
    *
    * @example
    <example>
-     <file name="index.html">
+     <file name="home.html">
        <script>
          function ExampleController($cookies) {
            // Retrieving a cookie

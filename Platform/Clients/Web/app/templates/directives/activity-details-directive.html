@@ -3,13 +3,13 @@
 
     </div>
     <div class="animate-switch" ng-switch-when="image">
+        <h3>{{ activity.title }}</h3>
         <img src="{{ activity.content }}" alt="activity image" />
-        <div>{{ activity.description }}</div>
-        <span>{{ activity.dateCreated }}</span>
+        <div>{{ activity.createdOn }}</div>
     </div>
     <div class="animate-switch" ng-switch-default>
+        <h3>{{ activity.title }}</h3>
         <div>{{ activity.content }}</div>
-        <div>{{ activity.description }}</div>
-        <span>{{ activity.dateCreated }}</span>
+        <div>{{ activity.createdOn }}</div>
     </div>
 </div>

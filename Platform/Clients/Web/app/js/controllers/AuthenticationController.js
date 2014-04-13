@@ -1,21 +1,30 @@
 'use strict';
 
-astroPlatform.controller('AuthenticationController', function($scope, authentication) {
+astroPlatform.controller('AuthenticationController', function($scope, $location, authentication) {
     $scope.isLogged = authentication.isLogged;
+    $scope.username;
 
     $scope.registerUser = function(user, registrationForm) {
         if (registrationForm.$valid) {
-            authentication.register(user);
+            $scope.isLogged = true;
+            $scope.username = user.username;
+            $location.path('#/users');
+            //authentication.register(user);
         }
     }
 
     $scope.loginUser = function(user, loginForm) {
         if (loginForm.$valid) {
-            authentication.login(user);
+           $scope.isLogged = true;
+           $scope.username = user.username;
+           $location.path('#/users');
+           // authentication.login(user);
         }
     }
 
     $scope.logout = function() {
-        authentication.logout();
+        $scope.isLogged = false;
+        $scope.username = null;
+        // authentication.logout();
     }
 })

@@ -1,0 +1,90 @@
+.landing {
+  background: #000;
+
+  .servers,
+  .selfie,
+  .banner {
+    height: 100%;
+    background: url('../img/pacific-ocean-large.jpg') no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+    box-shadow: 0 0 30px #000000 inset;
+    height: 100%;
+    width: 100%;
+  }
+
+  .client,
+  .slogan,
+  .go-down {
+    @extend %none-user-select;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+
+    h1 {
+      text-shadow: #000 0 4px 4px;
+    }
+  }
+
+  .go-down {
+    bottom: 3%;
+    top: auto;
+    opacity: .4;
+    transition: opacity 400ms ease;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .regular,
+  .introducing {
+    position: relative;
+    width: 100%;
+
+    &.two {
+      margin-bottom: -200px;
+    }
+  }
+
+  .selfie {
+    background-image: url('../img/astronaut-self-portrait.jpg');
+    position: relative;
+  }
+
+  .servers {
+    background-image: url('../img/server-data.jpg');
+    position: relative;
+    background-position: static;
+    height: auto;
+  }
+
+  .client {
+    background-image: url('../img/mission-control.jpg');
+    position: relative;
+    height: auto;
+  }
+
+  .works {
+    background: #000;
+
+    h2 {
+      padding-top: 12px;
+      margin-top: 0;
+    }
+
+    &.first {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .line {
+      height: 3px;
+      width: 100%;
+      background: $logo;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

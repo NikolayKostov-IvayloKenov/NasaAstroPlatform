@@ -52,21 +52,39 @@
     width: 100%;
   }
 
-  @for $i from 1 through 5 {
+  @for $i from 1 through 10 {
     .u-mb#{$i} {
       margin-bottom: 10px*$i;
     }
   }
 
-  @for $i from 1 through 5 {
+  @for $i from 1 through 10 {
     .u-mt#{$i} {
       margin-top: 10px*$i;
     }
   }
 
-  @for $i from 1 through 5 {
+  @for $i from 1 through 10 {
+    .u-mr#{$i} {
+      margin-right: 10px*$i;
+    }
+  }
+
+  @for $i from 1 through 10 {
+    .u-ml#{$i} {
+      margin-left: 10px*$i;
+    }
+  }
+
+  @for $i from 1 through 10 {
     .u-pb#{$i} {
       padding-bottom: 10px*$i;
+    }
+  }
+
+  @for $i from 1 through 10 {
+    .u-pt#{$i} {
+      padding-top: 10px*$i;
     }
   }
 }

@@ -4,8 +4,8 @@ var astroPlatform = angular
     .module('astroPlatform', ['ngResource', 'ngRoute', 'ngCookies'])
     .config(function($routeProvider) {
         $routeProvider
-            .when('/home', {
-                templateUrl: 'templates/home.html'
+            .when('/', {
+                templateUrl: 'templates/users.html'
             })
             .when('/register', {
                 templateUrl: 'templates/register.html'
@@ -21,6 +21,12 @@ var astroPlatform = angular
             })
             .when('/notifications', {
                 templateUrl: 'templates/notifications.html'
+            })
+            .when('/activities', {
+                templateUrl: 'templates/activities/activities.html'
+            })
+            .when('/activities/details/:id/:title', {
+                templateUrl: 'templates/activities/activityDetails.html'
             })
             .otherwise({redirectTo: '/astronauts'});
     })

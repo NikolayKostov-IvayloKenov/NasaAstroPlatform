@@ -1,6 +1,6 @@
 'use strict';
 
-astroPlatform.filter('activity', function() {
+astroPlatform.filter('status', function() {
     return function(input) {
         if (input) {
             return "online";
