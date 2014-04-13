@@ -230,7 +230,7 @@ StaticServlet.prototype.sendRedirect_ = function (req, res, redirectUrl) {
 
 StaticServlet.prototype.sendDefault_ = function (req, res) {
     var self = this;
-    var path = './index.html'
+    var path = './home.html'
 
     var file = fs.createReadStream(path);
     res.writeHead(200, {

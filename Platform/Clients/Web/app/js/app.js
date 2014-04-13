@@ -4,8 +4,8 @@ var astroPlatform = angular
     .module('astroPlatform', ['ngResource', 'ngRoute', 'ngCookies'])
     .config(function($routeProvider) {
         $routeProvider
-            .when('/home', {
-                templateUrl: 'templates/home.html'
+            .when('/', {
+                templateUrl: 'templates/users.html'
             })
             .when('/register', {
                 templateUrl: 'templates/register.html'

@@ -12,15 +12,19 @@
 
            <div class="form-group">
             <label for="inputEmail" class="control-label u-db">Email</label>
-            <input type="text" class="form-control" id="username" ng-model="user.username" placeholder="Email">
+            <input type="text" class="form-control" id="inputEmail" ng-model="user.username" placeholder="Email">
           </div>
           <div class="form-group">
             <label for="inputPassword" class="control-label u-db">Password</label>
-            <input type="password" class="form-control" id="password" ng-model="user.password" placeholder="Password">
+            <input type="password" class="form-control" id="inputPassword" ng-model="user.password" placeholder="Password">
           </div>
 
           <div class="form-group u-mt2">
             <button type="submit" class="btn btn-primary u-db col-md-12 u-full" ng-click="loginUser(user, loginForm)" ng-disabled="loginForm.$invalid">Login</button>
+          </div>
+            <br />
+          <div class="form-group u-mt2">
+              <a href="/#/register" class="btn btn-primary u-db col-md-12 u-full">Click here to register</a>
           </div>
         </div>
       </div>
