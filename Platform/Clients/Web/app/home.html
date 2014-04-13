@@ -1,13 +1,139 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Astro Platform</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <!--     <link rel="stylesheet" href="../css/bootstrap-theme.min.css" />-->
-    <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="utf-8">
+  <title>Astro Platform</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body>
+<body class="landing" id="mod">
+  <div class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 u-tac slogan">
+          <h1>Take the space to the cloud.</h1>
+        </div>
+        <span class="go-down u-tac">
+          <span class="glyphicon glyphicon-chevron-down u-db"></span>
+          Go to see
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="introducing">
+    <div class="container u-mb4">
+      <div class="row">
+        <div class="col-md-12 u-tac">
 
+          <h3 class="u-mt8">Introducing <br><img src="../img/700.png" width="350" height="60" class="u-mt4"></h3>
+          <em class="text-muted u-db u-mb5">Taking care of your space data and displaying it in a friendly way.</em>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="selfie">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 u-tac works">
+          <h2 class="u-pb2 u-mb0">How it works?</h2>
+          <div class="line hr"></div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-offset-6 col-md-4 u-tac works first">
+          <h4>We take the data from your wearable devices.</h4>
+          <img src="../img/smartwatch.png" alt="" class="u-mt2 u-mb2 " height="160px">
+          <div class="line hr"></div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="regular">
+    <div class="container u-mb4">
+      <div class="row">
+        <div class="col-md-12 u-tac">
+
+          <h3 class="u-mt8">Then..</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="servers">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 u-tac works u-mb10">
+          <img src="../img/cloud.png" alt="" class="u-mt2 u-mb1 " height="160px">
+          <div class="line hr"></div>
+          <h4 class="u-pb2">We send it to cloud servers.</h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="regular two">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 u-tac">
+          <h3 class="u-mt8">And finally..</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="client">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-6 col-md-4 u-tac works u-mb10">
+          <img src="../img/imac.png" alt="" class="u-mt2 u-mb1 " height="160px">
+          <div class="line hr"></div>
+          <h4 class="u-pb2">The data gets to the AstroPlatform's web client.</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="regular u-mt10">
+    <div class="container u-mt10">
+      <div class="row u-mt10">
+        <div class="col-md-12 u-tac u-mt4">
+          <h3 class="u-mt4 u-pt6">Give it a try?</h3>
+          <h1>Sign up for the private beta</h1>
+          <div class="form-group col-md-4  col-md-offset-4 u-mt3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Email">
+              <span class="input-group-btn" >
+                <button class="btn btn-primary" type="button">Sign me up</button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer u-tac u-mt4 u-mb1">
+    <small>by <a href="https://github.com/NasaSpaceAppsChallenge2014">Team Titan</a></small>
+  </div>
+
+  <script src="lib/jquery.min.js"></script>
+  <script>
+  $(function(){
+    target = $('.introducing')
+    $('.go-down').on('click', function (e){
+      e.preventDefault
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1500);
+    });
+  });
+  </script>
 </body>
 </html>

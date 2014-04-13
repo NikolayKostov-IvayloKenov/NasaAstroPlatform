@@ -1,4 +1,6 @@
-.user-box {
+.user-box, .landing .client,
+.landing .slogan,
+.landing .go-down {
   -webkit-user-select: none;
   /* Chrome all / Safari all */
   -moz-user-select: none;
@@ -158,6 +160,21 @@ footer {
 #mod .u-mb5 {
   margin-bottom: 50px;
 }
+#mod .u-mb6 {
+  margin-bottom: 60px;
+}
+#mod .u-mb7 {
+  margin-bottom: 70px;
+}
+#mod .u-mb8 {
+  margin-bottom: 80px;
+}
+#mod .u-mb9 {
+  margin-bottom: 90px;
+}
+#mod .u-mb10 {
+  margin-bottom: 100px;
+}
 #mod .u-mt1 {
   margin-top: 10px;
 }
@@ -173,6 +190,81 @@ footer {
 #mod .u-mt5 {
   margin-top: 50px;
 }
+#mod .u-mt6 {
+  margin-top: 60px;
+}
+#mod .u-mt7 {
+  margin-top: 70px;
+}
+#mod .u-mt8 {
+  margin-top: 80px;
+}
+#mod .u-mt9 {
+  margin-top: 90px;
+}
+#mod .u-mt10 {
+  margin-top: 100px;
+}
+#mod .u-mr1 {
+  margin-right: 10px;
+}
+#mod .u-mr2 {
+  margin-right: 20px;
+}
+#mod .u-mr3 {
+  margin-right: 30px;
+}
+#mod .u-mr4 {
+  margin-right: 40px;
+}
+#mod .u-mr5 {
+  margin-right: 50px;
+}
+#mod .u-mr6 {
+  margin-right: 60px;
+}
+#mod .u-mr7 {
+  margin-right: 70px;
+}
+#mod .u-mr8 {
+  margin-right: 80px;
+}
+#mod .u-mr9 {
+  margin-right: 90px;
+}
+#mod .u-mr10 {
+  margin-right: 100px;
+}
+#mod .u-ml1 {
+  margin-left: 10px;
+}
+#mod .u-ml2 {
+  margin-left: 20px;
+}
+#mod .u-ml3 {
+  margin-left: 30px;
+}
+#mod .u-ml4 {
+  margin-left: 40px;
+}
+#mod .u-ml5 {
+  margin-left: 50px;
+}
+#mod .u-ml6 {
+  margin-left: 60px;
+}
+#mod .u-ml7 {
+  margin-left: 70px;
+}
+#mod .u-ml8 {
+  margin-left: 80px;
+}
+#mod .u-ml9 {
+  margin-left: 90px;
+}
+#mod .u-ml10 {
+  margin-left: 100px;
+}
 #mod .u-pb1 {
   padding-bottom: 10px;
 }
@@ -187,4 +279,129 @@ footer {
 }
 #mod .u-pb5 {
   padding-bottom: 50px;
+}
+#mod .u-pb6 {
+  padding-bottom: 60px;
+}
+#mod .u-pb7 {
+  padding-bottom: 70px;
+}
+#mod .u-pb8 {
+  padding-bottom: 80px;
+}
+#mod .u-pb9 {
+  padding-bottom: 90px;
+}
+#mod .u-pb10 {
+  padding-bottom: 100px;
+}
+#mod .u-pt1 {
+  padding-top: 10px;
+}
+#mod .u-pt2 {
+  padding-top: 20px;
+}
+#mod .u-pt3 {
+  padding-top: 30px;
+}
+#mod .u-pt4 {
+  padding-top: 40px;
+}
+#mod .u-pt5 {
+  padding-top: 50px;
+}
+#mod .u-pt6 {
+  padding-top: 60px;
+}
+#mod .u-pt7 {
+  padding-top: 70px;
+}
+#mod .u-pt8 {
+  padding-top: 80px;
+}
+#mod .u-pt9 {
+  padding-top: 90px;
+}
+#mod .u-pt10 {
+  padding-top: 100px;
+}
+
+.landing {
+  background: #000;
+}
+.landing .servers,
+.landing .selfie,
+.landing .banner {
+  height: 100%;
+  background: url("../img/pacific-ocean-large.jpg") no-repeat fixed center center/cover rgba(0, 0, 0, 0);
+  box-shadow: 0 0 30px #000000 inset;
+  height: 100%;
+  width: 100%;
+}
+.landing .client,
+.landing .slogan,
+.landing .go-down {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+.landing .client h1,
+.landing .slogan h1,
+.landing .go-down h1 {
+  text-shadow: #000 0 4px 4px;
+}
+.landing .go-down {
+  bottom: 3%;
+  top: auto;
+  opacity: .4;
+  transition: opacity 400ms ease;
+  cursor: pointer;
+}
+.landing .go-down:hover {
+  opacity: 1;
+}
+.landing .regular,
+.landing .introducing {
+  position: relative;
+  width: 100%;
+}
+.landing .regular.two,
+.landing .introducing.two {
+  margin-bottom: -200px;
+}
+.landing .selfie {
+  background-image: url("../img/astronaut-self-portrait.jpg");
+  position: relative;
+}
+.landing .servers {
+  background-image: url("../img/server-data.jpg");
+  position: relative;
+  background-position: static;
+  height: auto;
+}
+.landing .client {
+  background-image: url("../img/mission-control.jpg");
+  position: relative;
+  height: auto;
+}
+.landing .works {
+  background: #000;
+}
+.landing .works h2 {
+  padding-top: 12px;
+  margin-top: 0;
+}
+.landing .works.first {
+  position: absolute;
+  bottom: 0;
+}
+.landing .works .line {
+  height: 3px;
+  width: 100%;
+  background: #90b9d1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
