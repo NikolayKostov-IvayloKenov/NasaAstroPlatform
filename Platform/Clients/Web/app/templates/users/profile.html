@@ -1,12 +1,56 @@
 <div class="container clearfix" ng-controller="UserProfileController">
-    <section class="userData">
-        <h3>{{ userData.username }}</h3>
-        <img src="{{ userData.imageUrl }}" alt="user profile image" />
-        <div>
-            <span class="userStatus">{{ userData.status }}</span>
+
+    <div class="row">
+        <div class="col-sm-4 col-xs-4" >
+          <div class="stat-box">
+            <h3>
+                {{ userData.name }}
+            </h3>
         </div>
-    </section>
-    <section class="userActivities">
-        <article ng-repeat="activity in userData.activities" activity-list-item-directive activity="activity" />
-    </section>
+
+        <div class="stat-box">
+            <img src="{{ userData.imageUrl }}" alt="user profile image" />
+        </div>
+    </div>
+
+    <div class="col-sm-8 col-xs-8" >
+        <div class="row">
+            <div class="col-sm-10 col-xs-12" >
+                <div class="stat-box">
+                    Recent activities:
+                    <hr>
+                    <section class="userActivities">
+                        <article ng-repeat="activity in userData.activities" activity-list-item-directive activity="activity" />
+                    </section>
+                    <hr>
+                    <a href="/#/activities" class="u-dib u-mt1">See all activities</a>
+                </div>
+
+            </div>
+            <div class="col-sm-2 col-xs-12" >
+                <div class="stat-box">
+                    <div class="heart-stat u-tac">
+                        <span class="glyphicon glyphicon-heart u-db" style="font-size: 3.5em;"></span>
+                        <strong>70</strong> bpm
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="loc-stat u-tac">
+                        <span class="glyphicon glyphicon-map-marker u-db" style="font-size: 3.5em;"></span>
+                        <strong>space</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-6" >
+            <div class="stat-box {{ useData.status | status }} u-mt1">
+               <span class="glyphicon glyphicon-ok u-mr1"></span>
+               <h5 class="u-di">{{ useData.status | status }}</h5>
+           </div>
+       </div>
+   </div>
+
 </div>
