@@ -26,19 +26,15 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                    <h3 class="text-center">Waiting for notifications...</h3>
-                </div>
-                <div class="panel-body">
-                    <div ng-repeat="notification in notifications | orderBy: sort">
-                        <a href="{{ notification.description }}">
-                            <div class="panel text-center">
-                        <span class="panel-body">
-                            {{ notification.content }}
-                        </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+               </div>
+           </div>
+           <div ng-repeat="notification in notifications | orderBy: sort" class="stat-box u-full u-tac white-it">
+            <a href="{{ notification.description }}" class="white-it">
+                    <span class="">
+                        {{ notification.content }}
+                    </span>
+            </a>
         </div>
     </div>
+</div>
 </div>

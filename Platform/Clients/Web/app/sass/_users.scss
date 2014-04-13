@@ -107,5 +107,35 @@ $status-line-height: 4px;
     background: $success;
     padding:5px;
   }
+
 }
 
+.mission-progress {
+  margin-top:20px;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:10px;
+    border-bottom: 3px solid darken($dark-blue, 10%);
+    z-index: 1;
+  }
+
+  img {
+    z-index: 2;
+    position: absolute;
+    transition: left 400ms ease;
+    left:20px;
+  }
+}
+
+.white-it {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
