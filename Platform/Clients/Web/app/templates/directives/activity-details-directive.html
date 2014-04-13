@@ -1,15 +1,30 @@
+
+
 <div ng-switch on="activity.type">
     <div class="animate-switch" ng-switch-when="nasa">
 
     </div>
     <div class="animate-switch" ng-switch-when="image">
-        <h3>{{ activity.title }}</h3>
-        <img src="{{ activity.content }}" alt="activity image" />
-        <div>{{ activity.createdOn }}</div>
+        <div class="stat-box">
+            <h3 class="u-tac">{{ activity.title }}</h3>
+        </div>
+        <div class="stat-box">
+            <img src="{{ activity.contentLarge }}" alt="activity image" class="u-full" />
+        </div>
+        <div class="stat-box">
+            <span class="glyphicon glyphicon-time u-dib u-mr1"></span>
+            <small>{{ activity.createdOn }}</small>
+        </div>
     </div>
     <div class="animate-switch" ng-switch-default>
-        <h3>{{ activity.title }}</h3>
-        <div>{{ activity.content }}</div>
-        <div>{{ activity.createdOn }}</div>
+        <div class="stat-box">
+            <h3 class="u-tac">{{ activity.title }}</h3>
+        </div>
+        <div class="stat-box">{{ activity.content }}</div>
+
+        <div class="stat-box">
+            <span class="glyphicon glyphicon-time u-dib u-mr1"></span>
+            <small>{{ activity.createdOn }}</small>
+        </div>
     </div>
 </div>

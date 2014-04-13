@@ -3,10 +3,10 @@
 astroPlatform.filter('status', function() {
     return function(input) {
         if (input) {
-            return "online";
+            return "Online";
         }
         else {
-            return "offline";
+            return "Offline";
         }
     }
 });

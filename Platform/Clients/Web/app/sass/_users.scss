@@ -79,3 +79,33 @@ $status-line-height: 4px;
 
 }
 
+.stat-box {
+  background: $dark-blue;
+  padding: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+
+  img {
+    width: auto;
+    max-width: 100%;
+  }
+
+  > h3 {
+    margin: 0;
+  }
+
+  hr {
+    margin: 10px 0 0 0;
+  }
+
+  .heart-stat {
+    background: $failure;
+    padding:5px;
+  }
+
+  .loc-stat {
+    background: $success;
+    padding:5px;
+  }
+}
+

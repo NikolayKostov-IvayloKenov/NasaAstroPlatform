@@ -31,4 +31,4 @@ var astroPlatform = angular
             .otherwise({redirectTo: '/astronauts'});
     })
     .constant('author', 'Team Titan')
-    .constant('apiUrl', 'http://localhost:8080')
+    .constant('apiUrl', 'http://79.124.67.13:8080')

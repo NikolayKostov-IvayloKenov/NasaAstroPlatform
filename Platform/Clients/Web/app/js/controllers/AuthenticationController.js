@@ -8,7 +8,7 @@ astroPlatform.controller('AuthenticationController', function($scope, $location,
         if (registrationForm.$valid) {
             $scope.isLogged = true;
             $scope.username = user.username;
-            $location.path('#/users');
+            $location.path('/astronauts');
             //authentication.register(user);
         }
     }
@@ -17,7 +17,7 @@ astroPlatform.controller('AuthenticationController', function($scope, $location,
         if (loginForm.$valid) {
            $scope.isLogged = true;
            $scope.username = user.username;
-           $location.path('#/users');
+           $location.path('/astronauts');
            // authentication.login(user);
         }
     }
