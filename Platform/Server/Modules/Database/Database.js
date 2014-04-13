@@ -3,6 +3,7 @@
 var mongoose = require('mongoose');
 var User = require('./Models/User');
 var Activity = require('./Models/Activity');
+var Astronaut = require('./Models/Astronaut');
 
 var Database = function(options) {
     this._options = options;
@@ -14,6 +15,7 @@ Database.prototype = {
         mongoose.connect(this._options.host);
         this._models.User = User;
         this._models.Activity = Activity;
+        this._models.Astronaut = Astronaut;
     },
 
     getAll: function(type, callback) {
@@ -27,10 +29,17 @@ Database.prototype = {
         typeModel.save(callback);
     },
 
+    get: function(type, expression, callback){
+        var DataType = this._getDataType(type);
+        DataType.findOne(expression, function(err, result){
+            callback(err, result);
+        });
+    },
+
     getLast: function(type, callback) {
         var DataType = this._getDataType(type);
-        DataType.findOne({}, {}, { sort: { 'created_at' : -1 } }, function(err, result) {
-            callback(null, result);
+        DataType.findOne({}, {}, { sort: { 'created_on' : -1 } }, function(err, result) {
+            callback(err, result);
         });
     },
 

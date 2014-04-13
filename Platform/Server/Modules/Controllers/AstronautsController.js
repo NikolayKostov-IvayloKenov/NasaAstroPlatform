@@ -8,75 +8,51 @@ var AstronautsController = function () {
 
 util.inherits(AstronautsController, BaseController);
 
-AstronautsController.prototype.registerRoutes = function() {
+AstronautsController.prototype.registerRoutes = function () {
     this._http.registerRoute({
         method: 'GET',
         path: '/astronauts',
         handler: this.handleAllAstronautsGet.bind(this)
     });
+
+    this._http.registerRoute({
+        method: 'POST',
+        path: '/astronauts',
+        handler: this.handleAstronautsPost.bind(this)
+    });
+
+    this._http.registerRoute({
+        method: 'GET',
+        path: '/astronauts/:username',
+        handler: this.handleAstronautGetByUsername.bind(this)
+    });
 };
 
-AstronautsController.prototype.handleAllAstronautsGet = function(req, res, next) {
+AstronautsController.prototype.handleAllAstronautsGet = function (req, res, next) {
     var self = this;
 
-    var mockResponse = [{
-        id: 1,
-        username: 'hansen',
-        name: 'Jeremy Hansen',
-        active: false,
-        imageUrl: '/img/hansen.jpg',
-        activities: [{
-            type: "image",
-            description: "Test image",
-            content: "http://gallery.artofgregmartin.com/tuts_arts/planet_images/planet_01.jpg",
-            dateCreated: new Date(Date.now())
-        },{
-            type: "text",
-            description: "Test text",
-            content: "This is a test text",
-            dateCreated: new Date(Date.now())
-        }]
-    },{
-        id: 2,
-        username: 'wiseman',
-        name: 'Gregory Wiseman',
-        active: true,
-        imageUrl: '/img/wiseman.jpg',
-        activities: [{
-            type: "image",
-            description: "Test image",
-            content: "http://gallery.artofgregmartin.com/tuts_arts/planet_images/planet_01.jpg",
-            dateCreated: new Date(Date.now())
-        },{
-            type: "text",
-            description: "Test text",
-            content: "This is a test text",
-            dateCreated: new Date(Date.now())
-        }]
-    },{
-        id: 3,
-        username: 'rubins',
-        name: 'Kathleen Rubins',
-        active: true,
-        imageUrl: '/img/rubins.jpg',
-        activities: [{
-            type: "image",
-            description: "Test image",
-            content: "http://gallery.artofgregmartin.com/tuts_arts/planet_images/planet_01.jpg",
-            dateCreated: new Date(Date.now())
-        },{
-            type: "text",
-            description: "Test text",
-            content: "This is a test text",
-            dateCreated: new Date(Date.now())
-        }]
-    }];
+    this._db.getAll('Astronaut', function (err, data) {
+        self._http.respondJSON(req, res, data);
+    });
+};
 
-    self._http.respondJSON(req, res, mockResponse);
+AstronautsController.prototype.handleAstronautsPost = function (req, res, next) {
+    var astronaut = req.body;
+    var self = this;
 
-//    this._db.getAll('Astronauts', function (err, data) {
-//        self._http.respondJSON(req, res, data);
-//    });
+    this._db.add('Astronaut', astronaut, function(err) {
+        self._http.respondJSON(req, res, 'Success');
+    });
+};
+
+AstronautsController.prototype.handleAstronautGetByUsername = function (req, res, next) {
+    var astronaut = req.body;
+    var username = req.route.params.username;
+    var self = this;
+
+    this._db.get('Astronaut', {username: username}, function(err, data) {
+        self._http.respondJSON(req, res, data);
+    });
 };
 
 module.exports = AstronautsController;
