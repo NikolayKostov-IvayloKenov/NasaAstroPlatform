@@ -16,10 +16,10 @@
       <widget class="Gtk.Notebook" id="notebook1">
         <property name="MemberName" />
         <property name="CanFocus">True</property>
-        <property name="CurrentPage">0</property>
+        <property name="CurrentPage">1</property>
         <property name="BorderWidth">6</property>
         <child>
-          <widget class="NasaAstroPlatform.Desktop.Client.SendMessageWidget" id="sendmessagewidget2">
+          <widget class="NasaAstroPlatform.Desktop.Client.SendMessageWidget" id="sendmessagewidget1">
             <property name="MemberName" />
             <property name="Events">ButtonPressMask</property>
           </widget>
@@ -34,7 +34,7 @@
           </packing>
         </child>
         <child>
-          <widget class="NasaAstroPlatform.Desktop.Client.SendMessageWidget" id="sendmessagewidget3">
+          <widget class="NasaAstroPlatform.Desktop.Client.SendMessageWidget" id="sendmessagewidget2">
             <property name="MemberName" />
             <property name="Events">ButtonPressMask</property>
           </widget>
