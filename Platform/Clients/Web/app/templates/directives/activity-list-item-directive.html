@@ -1,16 +1,14 @@
-
 <div ng-switch on="activity.type" class="activity-row u-mt1">
     <div class="animate-switch" ng-switch-when="nasa">
 
     </div>
 
     <a href="#/activities/details/{{ activity.id }}/{{ activity.title }}" ng-switch-when="image">
-
         <img src="{{ activity.content }}" class="u-mr1" alt="activity image" />
         <h4>{{ activity.title }}</h4>
         <div class="time pull-right">{{ activity.createdOn }}</div>
     </a>
-    <a href="#/activities/details/{{ activity.id }}" ng-switch-default>
+    <a href="#/activities/details/{{ activity.id }}/{{ activity.title }}" ng-switch-default>
         <h4>{{ activity.title }}</h4>
         <div class="time pull-right">{{ activity.createdOn }}</div>
     </a>
